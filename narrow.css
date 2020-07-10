@@ -1,0 +1,448 @@
+/* All slides Classes */
+.next-arrow-container{
+  width: 80%;
+}
+
+.down-arrow{
+  margin-left: 1.8rem;
+}
+
+.up-arrow{
+  margin-left: 1.8rem;
+}
+
+.mini-logo{
+  width: 99%;
+  margin: 0;
+}
+
+
+#fp-nav.fp-left {
+  left: -28px;
+}
+
+.slide-layout{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 20% 20% 40% 20%;
+}
+.slide-right{
+  width: 50%;
+}
+
+.slide-left{
+  width: 50%;
+}
+/* About me Cover Page */
+
+.about-cover-page{
+grid-template-columns: 7% 56% 23% 14%;
+}
+
+.about-logo{
+  width: 110%;
+  padding-top: 1rem;
+}
+.about-intro{
+  grid-row: 1;
+  flex-direction: column;
+}
+.about-tagline{
+  margin-block-start: .5rem;
+  margin-block-end: .5rem;
+  padding: 1rem 0 0 0;
+  font-size: 2rem;
+  line-height: 0.5rem;
+}
+
+.icon-wrapper{
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-left: 2rem;
+}
+
+.icon-padding{
+  width: 50%;
+  padding: 1rem;
+}
+
+.vert-stripe{
+  margin-top: .5rem;
+  height: 3rem;
+}
+.icon-label{
+  margin-top: 0rem;
+}
+#about-right-arrow{
+  width: 40%;
+  margin-left: 2rem;
+  opacity: .8;
+}
+.slide-one{
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 28% 12% 20% 40%;
+}
+.samples-text{
+  margin: 1.6rem 0 0 1.6rem;
+}
+.home-down-arrow{
+  margin: 0.8rem;
+}
+.home-title-wrapper{
+  margin-top: 1rem;
+  align-items: start;
+  justify-items: center;
+  margin-right: -4rem;
+}
+.home-pg-title{
+  margin-block-start: .5rem;
+  margin-block-end: .5rem;
+  padding: 0 .5rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+.global-photo{
+  opacity: 0.6;
+}
+.global-text-wrapper{
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.global-text h1{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.global-text p{
+  font-size: 1.8rem;
+}
+.about-jewelry-graphic{
+  background-image: url(/NW-Designer-Developer-Portfolio/images/Mobile_About\ Jewelry\ Curlicues.png);
+}
+.jewelry-card-container{
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+.about-jewelry-bold{
+  font-size: 2rem;
+  line-height: 0rem;
+  margin-left: 1rem;
+}
+.second-indent .third-indent{
+  margin-left: 0;
+}
+.jewelry-card-bracelet{
+  margin-left: -3rem;
+  width: 50%;
+}
+.jewelry-card-ring{
+  width: 50%;
+  margin: 0px 0 15rem 4rem;
+}
+
+.jewelry-card-text{
+  margin-right: -15rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+.gradient-cutaway{
+  z-index: 4;
+}
+.about-SS-bold{
+  font-size: 2.6rem;
+  margin-left:2rem;
+  margin-top: 1rem;
+}
+.SS-logo-large{
+  grid-column: 2;
+  width: 40%;
+  margin: -3rem 0 0 -1rem; 
+  justify-self: end;
+}
+
+.rainas-photo-credit{
+  padding-left:7rem;
+}
+.about-SS-text{
+  grid-row: 2;
+  margin-left: 0;
+  font-size: 1.6rem;
+  margin-top: 7rem;
+}
+.placeholder-text{
+  font-size: 1rem;
+}
+
+/* Huntre Equine Cover and Slides */
+.cover-page-he{
+  grid-template-columns: 7% 56% 23% 14%;
+  
+}
+.he-cover-slide{
+  padding: 0 6rem 1rem 1rem;
+  width: 130%;
+
+}
+.he-info-slide{
+  padding: 3rem 0 0 1rem;
+  width: 130%;
+  justify-self: left;
+
+}
+
+.slide-items-monitor {
+  width: 81%;
+  padding-top: 5rem;
+  align-self: center;
+}
+
+.slide-items-text{
+  padding: 0rem 1rem;
+  font-size: 0.8rem;
+}
+
+.slide-items-wrapper{
+  grid-row: 2;
+  grid-column: 1 / 4;
+  margin-top: 15;
+  margin: -4rem 1rem 0 1rem;
+}
+
+.slide-items-image{
+  width: 100%;
+}
+
+/* Huntre Equine Cover and Slides */
+.cover-pg-he{
+  grid-template-columns: 7% 56% 23% 14%;
+}
+
+.he-info-slide{
+  padding: 5rem 0 0 1rem;
+}
+
+.he-cover-slide{
+  padding: 0 1rem 5rem 1rem;
+}
+.slide-title-box{
+  flex-direction: column;
+  align-items: center;
+  padding-right: 0rem;
+  margin-right: 0;
+  grid-column: 2;
+}
+.objective-approach-credits{
+  grid-column: 2;
+  grid-row: 3;
+  z-index: 4;
+  margin: -2rem 0rem 0rem 0rem;
+}
+.slide-title{
+  padding: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+/* Listen Closely Cover and Slides */
+.cover-pg-lc {
+  grid-template-columns: 7% 56% 23% 14%;
+}
+
+.lc-desktop {
+  width: 118%;
+  margin-left: 2rem;
+}
+
+.lc-mobile {
+  width: 65%;
+  margin: 0 0 2rem 0rem;
+}
+
+.LC-slide-items-wrapper{
+  grid-row: 2;
+  margin-top: 0rem; 
+}
+
+.LC-approach-credits{
+  grid-column: 2;
+  grid-row: 3 / 5;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+#LC-mobile-scrolling{
+  /* overflow-x: hidden; */
+  overflow: auto;
+  background-color: #fbfaea;
+}
+
+#scroll-arrow-slide-menu:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: .8rem solid transparent;
+  border-right: .8rem solid transparent;
+  border-top: 1.6rem solid #3e0c27;
+  margin-top: -2rem;
+  opacity: .8;
+}
+
+.LC-approach-credits-titles {
+  margin: 0rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.LC-approach-credits-text{
+  color: #3e0c27;
+  font-size: 1rem;
+  margin-right: 0rem;
+}
+
+.LC-slide-title-wrapper{
+  flex-direction: column;
+  align-items: center;
+  padding-right: 0rem;
+}
+
+.LC-logo{
+  padding: 0rem;
+  width: 85%
+}
+
+.LC-slide-title{
+  font-size: 1.3rem;
+  padding: 0rem;
+  text-align: center;
+  margin-block-start: 0rem;
+}
+
+.LC-slide-mobile{
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.LC-testimonial{
+  padding: 0.65rem;
+  margin: 1rem 1rem 0rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 0.62rem;
+}
+
+.slide-items-monitor{
+  width: 89%;
+  padding: 3rem 0 0 1rem;
+}
+
+.LC-button{
+  font-size: 1rem;
+  margin: 0.7rem;
+}
+
+/* Sangsangai Cover and Slides */
+.cover-pg-ss{
+  grid-template-columns: 7% 56% 23% 14%;
+}
+
+.ss-mobile{
+  opacity: 0;
+}
+
+.ss-mobile-single{
+  width: 85%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  z-index: 2;
+  margin-left: 2.3rem;
+  opacity: 1;
+}
+
+.SS-slide-title-wrapper{
+  flex-direction: column;
+  padding-right: 0rem;
+  align-items: center;
+}
+
+.SS-slide-title{
+  padding: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.SS-logo {
+  width: 35%;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+
+
+.SS-approach-credits{
+  grid-column: 2;
+  grid-row: 3;
+  margin: 3rem 0 0 0;
+}
+
+.slide-subject{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.SS-block-text{
+  font-size: 0.8rem;
+  margin-right: 0;
+}
+
+.SS-slide-monitor-view{
+  width: 65%;
+  padding: 7rem 10rem 4rem 4rem;
+}
+
+.SS-slide-3-item-wrapper{
+  flex-direction: column;
+  margin: 3rem 1rem 0 1rem;
+}
+
+.SS-landing-card-wrap{
+  width: 84%;
+}
+
+.SS-slide-mobile-view{
+  opacity: 0;
+}
+
+.SS-button{
+  font-size: 1rem;
+  margin: 0.7rem;
+}
+
+/* Numerati Cover and Slides */
+
+.cover-page-num{
+  grid-template-columns: 7% 56% 23% 14%;
+}
+.num-cover-slide{
+  width: 92%;
+  margin-top: 20rem;
+  grid-column: 1 / 5;
+}
+.num-logo{
+  padding: 1rem 0 0 0;
+  width: 90%;
+}
+
+.num-mobile-title{
+  margin-top: 15rem;
+}
+.num-full-graphic-overlay{
+  height: 40%;
+  margin-top: 18rem;
+}
+.num-part-graphic-overlay{
+  grid-column: 2;
+  opacity: 100%;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.35 194.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: gray;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="sponsor_page" data-name="sponsor page">
+      <path class="cls-1" d="M512.91,65.6c-5.3,1.4-9.45.73-11.41-4.35L501,60l-6-19.74L60.27,159.5l-12.09,5.64L3.62,177l-3-11.16L45,153.07l13.46-.81L492.91,33.11l-5.5-18.47c-1.72-6.15,1.47-12.57,7.2-14.13,1.4.27,13.75,10.43,14.78,13.11l.05.14c3,10.68,12,40.43,12,40.43C523.25,60.48,518.44,64,512.91,65.6Z"/>
+      <circle class="cls-1" cx="455.65" cy="165.87" r="28.36"/>
+    </g>
+  </g>
+</svg>

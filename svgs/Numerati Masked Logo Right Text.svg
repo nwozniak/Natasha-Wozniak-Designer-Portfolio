@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="723" height="109" viewBox="0 0 723 109">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1534 232">
+      <image width="1534" height="232" xlink:href="../../../../Numerati/Logo%20Materials/Numerati%20Masked%20Logo%20Right%20Text.png"/>
+    </pattern>
+  </defs>
+  <rect id="Numerati_Masked_Logo_Right_Text" data-name="Numerati Masked Logo Right Text" width="723" height="109" fill="url(#pattern)"/>
+</svg>

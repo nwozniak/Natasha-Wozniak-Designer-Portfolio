@@ -1,0 +1,1109 @@
+body {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.border {background-color: #707070;}
+.arrows {background-color: rgba (#fff 75%);}
+.arrowhov {background-color:#fff;}
+
+.HE-blue {background-color:#24273E; }
+.HE-blue-text {color: #24273e}
+.HE-lt-blue {background-color: #6EA2B2;}
+.HE-neutral {background-color: #FDFAF1; stroke: #fdfaf1;}
+.HE-text-box {background-color: #fff;}
+.HE-yellow{background-color: #FCC062;}
+.HE-yellow-text{color: #fcc062;}
+.HE-gradient{background-image: linear-gradient(to bottom, #24273E,#6EA2B2);}
+
+
+.LC-purple {background-color:#3E0C27;}
+.LC-purple-text{color:#3e0c27;}
+.LC-yellow-text{color:#D8C383;}
+.LC-lt_purple {background-color: #7E5C6E;}
+.LC-neutral {background-color:#FDFAF1;}
+.LC-neutral-text{color:#fdfaf1;}
+.LC-text-box{background-color: #FAEFD6;}
+.LC-gradient{ background-image: linear-gradient(to bottom, #3E0C27, #7E5C6E );}
+.LC-grey-text{color:#55565A;}
+
+.SS-teal {background-color: #469183;}
+.SS-teal-text{color: #469183;}
+.SS-orange {background-color: #E95035;}
+.SS-orange-text{color: #E95035;}
+.SS-neutral {background-color: #FDF8E4;}
+.SS-neutral-text{color:#FDF8E4}
+.SS-black-text{color: #000000;}
+
+.NWD-neutral {background-color: #F0F0CE;}
+.NWD-blue {background-color: #001843;}
+.NWD-text-box {background-color: #DADCC1;}
+
+.NUM-dusky-blue{background-color: #3F4C68;}
+.NUM-dusky-blue-text{color: #3F4C68;}
+.NUM-neutral{background-color: #D9D7D9;}
+.NUM-neutral-text{color: #d9d7d9;}
+.NUM-red{color: #C82537;}
+.NUM-gradient{background-image: linear-gradient(to right, #9BA2B5, #d9d7d9)}
+
+.about-blue{background-color:rgba(52, 76, 119,0.8);}
+
+/* SVG classes */
+.HE-cls-2 {
+  fill: none;
+  stroke:#faf6ea;
+  stroke-width: 4px;
+}
+
+.LC-cls-2 {
+  fill: none;
+  stroke:#fdfaf1;
+  stroke-width: 4px;
+}
+
+.SS-cls-2 {
+  fill: none;
+  stroke:#FDF8E4;
+  stroke-width: 4px;
+  }
+
+.NUM-cls-1 {
+  fill: none;
+  stroke: #3F4C68;
+  stroke-width: 4px;
+}
+
+.NUM-cls-2 {
+  fill: none;
+  stroke:#d9d7d9;
+  stroke-width: 4px;
+}
+
+/* fonts */
+
+p, h1, h2, h3, h4, h5, a {
+  font-family: 'rajdhani', sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'rajdhani', sans-serif;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+
+/* Cover Page General Classes */
+.section {
+  background-size: cover;
+}
+
+.mini-logo{
+  width: 40%;
+  margin-left: -10rem;
+}
+
+.color-block {
+  grid-column-start: 4;
+  grid-row: 1 / 4;
+  z-index: 1;
+}
+
+.vert-title-bold {
+  font-family:'rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem ;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  justify-self: center;
+  line-height: 0.2rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.vert-title-reg {
+  font-weight: 400;
+  text-transform: none;
+  margin: 0;
+  white-space: nowrap;
+  padding: 0 0 0 1rem;
+}
+
+.vert-nav {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  transform: rotate(-90deg);
+  justify-self: center;
+  text-transform: uppercase;
+  font-family: 'rajdhani', sans-serif;
+}
+
+
+.next-arrow-container {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.up-arrow  {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1.7rem solid #fff;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 2rem 2rem 4.5rem;
+  opacity: .6;
+}
+
+.down-arrow { 
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.7rem solid #fff;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 2rem 5rem 4.5rem;
+  opacity: .6;
+}
+
+
+.up-arrow:hover {
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-bottom: 2.5rem solid #fff;
+  opacity: 100;
+  margin: 5rem 2rem 2rem 3.6rem;
+}
+
+.down-arrow:hover { 
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-top: 2.5rem solid #fff;
+    opacity: 100;
+    margin: 0rem 2rem 5rem 3.6rem;
+}
+
+/* Slide page general classes */
+
+.slide-layout {
+  display: grid;
+  grid-template-columns: 10% 58% 32%;
+  grid-template-rows: 28% 12% 20% 40%; 
+}
+
+.left-colorbar {
+  grid-column: 1;
+  grid-row: 1 / 5;
+  z-index:2;
+}
+
+.right-colorbar {
+  grid-column: 3;
+  grid-row: 1 / 5;
+  z-index: 2;
+}
+
+.slide-right {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: start;
+  display: flex;
+  justify-self: flex-end;
+  margin-right: 1rem;
+  z-index: 6;
+}
+
+.slide-left {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: start;
+  display: flex;
+  justify-self: flex-start;
+  margin-left: 1rem;
+  z-index: 6;
+  transform: rotate(180deg);
+}
+
+.slide-title-box {
+  grid-row: 1;
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: space-between;
+  z-index: 6;
+  margin-right: 22rem;
+}
+
+.slide-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 3rem;
+}
+
+.slide-subject {
+  text-transform: uppercase;
+  font-size: 5rem; 
+  font-weight: 700;
+} 
+
+.slide-items-wrapper {
+  grid-column: 2/ 4;
+  grid-row: 2 / 5;
+  display: flex;
+  z-index: 8;
+  margin: -3rem 6rem 6rem -1rem;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.objective-approach-credits{
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;
+  margin: 0rem 0rem 0rem -5rem;
+}
+
+.btn-visit-site {
+  align-items: center;
+  background-color: beige;
+  font-family: rajdhani;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: .3rem;
+  margin-left: 7rem;
+  padding: 0.6rem
+}
+
+
+/* 16.9 format image */
+.slide-items-image {
+  align-self: flex-start;
+  width: 73%;
+}
+
+/* Monitor format image */
+
+.slide-items-monitor{
+  width: 76%;
+  padding: 0rem 5rem 4rem 6rem;
+  align-self: flex-start;
+}
+
+.slide-items-text {
+  font-weight: 500;
+  padding: 0 6rem 0 4rem;
+  font-size: 1.2rem;
+}
+
+.slide-menu {
+  grid-row-end: 5;
+  grid-column: 2;
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+/* Listen Closely Specific Slide Classes */
+.LC-slide-title-wrapper{
+  grid-row: 1 ;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+
+.LC-logo {
+  width: 42%;
+  padding: 2.2em 1em;
+}
+
+.LC-slide-title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 0rem;
+  margin-top: 0.2;
+}
+.LC-slide-header {
+  margin-left: 3rem;
+}
+.LC-slide-mobile{
+  width: 32%;
+  margin-left: 4rem;
+}
+
+.LC-approach-credits{
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;
+}
+
+.LC-approach-credits-titles{
+  margin: 2rem 0rem 0rem -5rem;
+}
+.LC-approach-credits-text{
+  margin-right: 5rem;
+}
+.LC-slide-items-wrapper{
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -1rem; 
+}
+
+.LC-testimonial{
+  font-size: 1.2rem;
+  justify-content: space-around;
+  margin: 0rem 7rem 0rem 3rem;
+  border-radius: .5rem;
+  padding: 3rem;
+  box-shadow: 5px 5px 5px darkgrey;
+  background-color: #60374D;
+}
+
+.LC-button {
+  background-color: #6C455A;
+  color: #fdfaf1;
+  border-color: #fdfaf1;
+  margin: 0 0 0 4rem;
+}
+
+
+.LC-button:hover{
+  background-color: #fdfaf1;
+  color: #6c455a;
+}
+ /* Sangsangai Specific Slide Classes */
+
+ .SS-slide-title-wrapper{
+  grid-row: 1 ;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+
+.SS-logo {
+  width: 20%;
+  padding: 2.2em 1em;
+}
+
+.SS-slide-title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 16rem 2rem 0rem;
+  margin-top: 0.2;
+}
+.SS-slide-mobile{
+  width: 37rem;
+  margin: 3rem 5rem;
+}
+
+.ss-mobile-single{
+  opacity: 0;
+}
+
+.SS-approach-credits{
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;
+  margin: 2rem 0rem 0rem -3rem;
+}
+
+.SS-block-text{
+  margin-right: 5rem;
+  padding-left: 7rem;
+}
+.SS-slide-monitor-view{
+  width: 55%;
+  padding: 1rem 5rem 4rem 6rem;
+  align-self: flex-start;
+}
+
+.SS-slide-mobile-view{
+  width: 72%;
+  align-self: flex-end;
+  z-index: 100;
+  box-shadow: 6px 6px 11px rgb(35, 31, 32, 0.75);
+}
+.SS-slide-3-item-wrapper{
+    grid-column: 2/ 3;
+    grid-row: 2 / 5;
+    display: flex;
+    align-items: center;
+    z-index: 8;
+    margin: 3rem -5rem 11rem 2rem;
+
+    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.SS-full-graphic-overlay {
+  grid-column: 1 / 4;
+  grid-row: 2 /5;
+  height: 94%;
+  z-index: 4;
+  opacity: 78%
+}
+
+.SS-landing-card-wrap{
+  display: flex;
+  width: 111%;
+  flex-flow: column;
+}
+
+.SS-landing-card-wrap-mobile{
+  display:flex;
+}
+
+.SS-info-overlay{
+  z-index: 10;
+}
+
+.SS-button {
+  background-color: #E95035;
+  color: #FDF8EF;
+  border-color: #FDF8EF;
+}
+.SS-button:hover{
+  background-color: #FDF8EF;
+  color: #d24f1b;
+  border-color: black;
+}
+
+/* Numerati Specific Slide Classes */
+.NUM-slide-title {
+  margin-right: 2rem;
+}
+
+.cyber-title {
+  font-size: 4rem;
+  text-align: right;
+}
+
+.auto-tele-title {
+  font-size: 5rem;
+  text-align: center;
+  line-height: 4rem;
+  margin-top: 4rem;
+}
+
+.vr-title {
+  margin-right: 10rem;
+}
+
+
+.num-graphic-overlay {
+  z-index: 4;
+  padding: 2rem 0rem 2rem 2rem;
+   width: 67%;
+}
+.num-part-graphic-overlay{
+  grid-column: 3;
+  grid-row: 1 /5;
+  z-index: 4;
+  opacity: 40%;
+  margin-left: -2rem;
+}
+.num-full-graphic-overlay {
+  grid-column: 1 / 4;
+  grid-row: 1 /5;
+  height: 100%;
+  z-index: 4;
+  opacity: 60%;
+}
+
+.num-logo {
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.num-slides {
+  width: 80%;
+  margin-left: 5rem;
+}
+
+.nums-slide-graphic {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+}
+
+.num-slide-title {
+  margin-left: -15rem;
+}
+
+.num-slide-subtitle {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+/* Home Cover Page */
+.home-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 35% 35% 20%;
+  grid-template-rows: 20% 60% 20%;
+  background-image: url("svgs/Neutral\ Terrace.svg");
+  background-size: cover;
+}
+
+.home-page-graphic {
+  grid-column: 1/ span 5;
+  grid-row: 1/ span 5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  z-index: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 1 / span 2;
+  justify-self: stretch;
+  padding: 3em;
+  width: 100%;
+}
+.home-title-wrapper { 
+  display: flex;
+  grid-row: 2;
+  grid-column: 2;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0em 6em 17em 0em;
+}
+ .vert-stripe{
+  opacity: .8;
+  z-index: 1;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+.home-pg-title {
+  color: #001843;
+  opacity: .7;
+  font-weight: 200;
+  font-size: 3rem;
+  padding: 1.3rem;
+  white-space: nowrap;
+}
+
+.designer-pad{
+  padding-bottom: 5rem;
+}
+
+
+
+.home-down-arrow {
+  border-top: 1.7rem solid #001843;
+}
+
+.home-down-arrow:hover {
+  border-top: 1.8rem solid #001843;
+}
+
+/* vertical text "work samples" */
+
+.vert-nav-wrap {
+  grid-column-start: 1;
+  grid-row-end: 4;
+  z-index: 1;
+  display: flex;
+  align-content: space-between;
+  justify-self: center ;
+}
+
+.samples-text {
+  grid-row: 2 / 3;
+  grid-column: 1;
+  transform: rotate(-90deg);
+  align-self: end;
+  z-index: 2; 
+  white-space: nowrap;
+  color: #001843;
+  opacity: .7;
+  font-weight: 200;
+  font-size: 2em;
+  margin: 0em 0em 3em .2em;
+}
+
+
+
+/* Huntre Equine Cover Page */
+
+.cover-pg-he {
+  background-image: linear-gradient(to bottom, #6EA2B2, #24273E );
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 60% 12% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+
+.he-cover-title {
+  color: #FAEFea;
+  grid-column-start: 4;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+  justify-self: center;
+  padding: 0 .4em 0 0;
+}
+
+.he-cover-slide {
+  width:80%;
+  grid-column-start: 2;
+  grid-row: 2;
+  z-index: 2;
+  justify-self: left;
+  align-self: end;
+} 
+
+.he-info-slide {
+  width: 80%; 
+  grid-column-end: 3;
+  grid-row-end:3;
+  justify-self: right;
+  align-self: start;
+  z-index: 1;
+} 
+
+.he-info-slide:hover {
+  z-index: 3;
+  transition: ease-in .5s;
+}
+
+.view-he {
+  color: #fcc062;
+}
+
+.vert-he-title-white {
+  color: #FAEFea;
+}
+
+/* Listen Closely Cover Page */
+
+.cover-pg-lc {
+  background-image: linear-gradient(to bottom, #3E0C27, #7E5C6E );
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 50% 22% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.lc-cover-title {
+  color: #3E0C27;
+  grid-column-start: 4;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+  justify-self: center;
+  padding: 0 5.2em 0 0;
+}
+
+.lc-desktop {
+  width:95%;
+  grid-column-start: 2;
+  grid-row: 2;
+  z-index: 1;
+} 
+
+.lc-mobile {
+  width: 35%; 
+  grid-column-end: 3;
+  grid-row-end:3;
+  justify-self: end;
+  align-self: end;
+   z-index: 2;
+} 
+
+.view-lc {
+  color: #FAEFea;
+}
+
+/* Listen CLosely Slide classes, see above*/
+
+
+ /* Sangsangai Cover Page */
+
+ 
+.cover-pg-ss {
+  background-color: #469183;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 18% 58% 16% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+
+
+ .ss-mobile {
+  width: 85%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  z-index: 2
+} 
+
+.ss-cover-title {
+  color: #FDF8E4;
+  grid-column-start: 4;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+
+  padding: 0 1em 0 0;
+}
+
+ .view-ss {
+  color: #FDF8E4;
+}
+
+/* NW Design COver Page */
+
+.cover-pg-nwd {
+  background-color: #001843;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 60% 12% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+
+
+ .nwd-card {
+  width: 100$; 
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  z-index: 1;
+  align-self: center;
+} 
+
+.nwd-cover-title {
+  color: #001843;
+  grid-column-start: 4;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+  justify-self: center;
+  padding: 0 2.2em 0 0;
+}
+
+ .view-nwd {
+  color: #E3D9BB;
+}
+
+/* Numerati Cover Page */
+
+.cover-page-num {
+  background-color: #D9D7D9;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 60% 12% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.view-num {
+ color: #3F4C68;
+}
+
+.num-cover-slide {
+  width: 110%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  z-index: 2;
+  margin-left: -5rem;
+}
+
+/* About Main Page */
+
+/* About Page */
+
+.about-cover-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 60% 12% 8%;
+  grid-template-rows: 10% 80% 10%;
+  background-image: url(images/About\ Page\ background.png);
+  background-size: cover;
+}
+/* delete this!!
+*/
+.placeholder-text{
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  font-size: 2rem;
+}
+
+.about-logo{
+  width: 50%;
+}
+
+.about-me {
+  color: #F0EBDB;
+  grid-column-start: 4;
+  grid-row: 2 /3;
+  align-self: flex-end;
+  z-index: 2;
+  white-space: nowrap;
+  margin-bottom: 6rem;
+}
+
+
+.icon-wrapper {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 20rem;
+  opacity: .8;
+  display: flex;
+  z-index: 2;
+}
+
+.icon-padding{
+  padding: 2rem;
+}
+
+.icon-label{
+  opacity: .8;
+  text-align: center;
+  color: #001843;
+}
+
+
+.slide-one{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 28% 12% 20% 40%; 
+  background-color: rgb(4, 4, 61);
+}
+
+.slide-two{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 28% 12% 20% 40%; 
+  background-image: linear-gradient(to bottom,#65738D, #001843);
+  background-size: cover;
+}
+.global-photo{
+  grid-row: 1 / 5;
+  grid-column: 1 / 4;
+  background-image: url(/NW-Designer-Developer-Portfolio/images/Patan\ graphic.png);
+  background-size: cover;
+  z-index: 4;
+  filter: drop-shadow(-2px 7px 4px #001742);
+}
+
+.global-text-wrapper{
+  grid-row: 1 / 3;
+  grid-column: 2 / 4;
+  display: flex;
+  line-height: 1rem;
+  padding-left: 10rem;
+  z-index: 10;
+  margin-left: 10rem;
+}
+
+.global-text h1{
+  font-size: 5rem;
+  color: #D89E44;
+  text-align: right;
+}
+
+.global-text p{
+  font-size: 2.8rem;
+  text-align: right;
+  line-height: 1em;
+  color: white;
+}
+
+.slide-three{
+  background-color: #001843;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 13% 17% 60% 10%;
+  grid-template-rows: 15% 70% 15%; 
+}
+
+.about-jewelry-graphic{
+  grid-row: 1 / 4;
+  grid-column: 1 / 5;
+  z-index: 4;
+  height: 100%;
+}
+
+.jewelry-card-container{
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  display: flex;
+  z-index: 8;
+  margin-top: 2rem;
+}
+
+.about-side-arrows {
+  grid-row: 2;
+  align-self: center;
+}
+
+.right-arrow {
+  grid-column: 4;
+  align-self: center;
+}
+
+ .jewelry-card-ring{
+  align-self: flex-end;
+  width: 39%;
+  z-index: 10;
+ }
+
+ .jewelry-card-bracelet {
+  align-self: flex-start;
+  width: 39%;
+  margin-right: -7rem;
+  margin-left: 11rem;
+ }
+ .about-jewelry-title-wrap{
+   grid-row: 1;
+   grid-column: 1 / 3;
+   z-index: 8;
+ }
+
+ .about-jewelry-bold {
+  text-transform: uppercase;
+  font-weight: 550;
+  color: white;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  line-height: 2rem;
+  margin-left: 4rem;
+  opacity: .9;
+ }
+
+ .second-indent{
+   margin-left:8rem;
+ }
+
+ .third-indent{
+   margin-left: 12rem;
+ }
+
+ .jewelry-card-text{
+  align-self: flex-end;
+  justify-self: left;
+  color: white;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-right: -17rem;
+ }
+
+ .slide-four{
+   display: grid;
+   grid-template-columns: 10% 80% 10%;
+   grid-template-rows: 40% 20% 40%;
+   background-size: cover;
+   background-color: #E95232;
+ }
+
+ .nepal-cutaway{
+  grid-row: 3;
+  grid-column: 1 /4;
+  z-index: 6;
+  align-self: end;
+ }
+
+
+ .gradient-cutaway{
+  grid-column: 1 /5;
+  grid-row: 1 /5;
+  clip-path: polygon(0 0, 100% 39%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to bottom,#65738D, #001843);
+ }
+
+ .SS-logo-large{
+  grid-row: 2 /3;
+  grid-column: 3;
+  margin-left: -14rem;
+  z-index: 10;
+  width: 140%;
+ }
+ .about-SS-text{
+  z-index: 12;
+  color: white;
+  grid-row: 1;
+  grid-column: 2 / 4;
+  margin-left: 29rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+ }
+
+ .about-SS-bold{
+  padding-right: 35rem;
+  z-index: 12;
+  color: white;
+  grid-row: 1;
+  grid-column: 1 /3;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  font-weight: 400;
+  font-size: 3.2rem;
+ }
+
+ .rainas-photo-credit{
+  transform: rotate(-90deg); */
+    grid-column: 1;
+    z-index: 10;
+    color: white;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    padding-left: 9rem;
+ }
