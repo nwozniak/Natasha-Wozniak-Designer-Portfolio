@@ -1,0 +1,43 @@
+.global-text h1{
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-right: 2rem;
+}
+
+.global-text p {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.jewelry-card-bracelet{
+  align-self: center;
+  width: 47%;
+  margin-right: -2rem;
+  margin-left: -3rem;
+}
+.jewelry-card-ring{
+  width:47%;
+}
+.about-jewelry-bold {
+  font-size: 3rem;
+}
+.jewelry-card-container{
+  margin-left: -11rem;
+}
+.jewelry-card-text{
+  font-size: 1.6rem;
+  margin-right: -12rem;
+}
+
+.mini-logo {
+  width: 64%;
+  margin-left: -7rem;
+}
+
+.he-cover-slide {
+  width: 110%
+}
+.he-info-slide {
+  width: 110%;
+  justify-self: left;
+}

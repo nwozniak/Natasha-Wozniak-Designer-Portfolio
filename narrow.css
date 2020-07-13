@@ -57,13 +57,13 @@ grid-template-columns: 7% 56% 23% 14%;
 
 .icon-wrapper{
   flex-direction: column;
-  margin-top: 6rem;
-  margin-left: 2rem;
+  margin-top: 10rem;
+  margin-left: 4rem;
 }
 
 .icon-padding{
-  width: 50%;
-  padding: 1rem;
+  width: 56%;
+  padding: 0;
 }
 
 .vert-stripe{
@@ -71,7 +71,7 @@ grid-template-columns: 7% 56% 23% 14%;
   height: 3rem;
 }
 .icon-label{
-  margin-top: 0rem;
+  margin: 0rem;
 }
 #about-right-arrow{
   width: 40%;
@@ -82,11 +82,14 @@ grid-template-columns: 7% 56% 23% 14%;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 28% 12% 20% 40%;
 }
+.work-samples-wrapper{
+  margin-bottom: -5rem;
+}
 .samples-text{
-  margin: 1.6rem 0 0 1.6rem;
+  margin: 6.6rem 0 3rem 1.6rem;
 }
 .home-down-arrow{
-  margin: 0.8rem;
+  margin-left: 4rem;
 }
 .home-title-wrapper{
   margin-top: 1rem;
@@ -94,6 +97,10 @@ grid-template-columns: 7% 56% 23% 14%;
   justify-items: center;
   margin-right: -4rem;
 }
+.home-first-line-wrapper {
+  margin: 0rem 17rem 0rem 0;
+}
+
 .home-pg-title{
   margin-block-start: .5rem;
   margin-block-end: .5rem;
@@ -151,15 +158,20 @@ grid-template-columns: 7% 56% 23% 14%;
 .gradient-cutaway{
   z-index: 4;
 }
+.about-SS{
+  flex-direction: column;
+  justify-content: normal;
+  margin-bottom: -6rem;
+}
 .about-SS-bold{
-  font-size: 2.6rem;
-  margin-left:2rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 2.3rem;
 }
 .SS-logo-large{
   grid-column: 2;
-  width: 40%;
-  margin: -3rem 0 0 -1rem; 
+  width: 38%;
+  margin: 2rem 2rem 0 -1rem;
   justify-self: end;
 }
 
@@ -168,9 +180,8 @@ grid-template-columns: 7% 56% 23% 14%;
 }
 .about-SS-text{
   grid-row: 2;
-  margin-left: 0;
-  font-size: 1.6rem;
-  margin-top: 7rem;
+  margin: 1rem 0 0 1rem;
+  font-size: 1.4rem;
 }
 .placeholder-text{
   font-size: 1rem;
