@@ -457,3 +457,11 @@ grid-template-columns: 7% 56% 23% 14%;
   grid-column: 2;
   opacity: 100%;
 }
+
+.num-cover-slide{
+  width: 162%;
+  margin-left: -1rem;
+  grid-column: 1 / 5;
+  z-index: 1;
+  margin-top: -1rem;
+}

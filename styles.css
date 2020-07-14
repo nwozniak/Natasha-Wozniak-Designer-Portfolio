@@ -143,6 +143,14 @@ ul {
   background-size: cover;
 }
 
+.project-role-title{
+  margin: 1rem 0 0 -10rem;
+  margin-left: -10rem;
+  color: white;
+  opacity: .6;
+  line-height: 1.8rem;
+}
+
 .mini-logo{
   width: 40%;
   margin-left: -10rem;
@@ -615,7 +623,7 @@ ul {
 
 .home-first-line-wrapper{
   display: inline-flex;
-  margin: 2rem 17rem 2rem 0;
+  margin: 4rem 24rem 3rem 0;
 }
 
 .home-second-line{
@@ -701,11 +709,6 @@ ul {
   align-self: start;
   z-index: 1;
 } 
-
-.he-info-slide:hover {
-  z-index: 3;
-  transition: ease-in .5s;
-}
 
 .view-he {
   color: #fcc062;
@@ -1086,6 +1089,7 @@ ul {
   grid-column: 1 /4;
   z-index: 4;
   align-self: end;
+  filter: drop-shadow(6px -3px 15px #000033);
  }
 
 
