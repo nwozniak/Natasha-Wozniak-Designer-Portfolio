@@ -1089,7 +1089,6 @@ ul {
   grid-column: 1 /4;
   z-index: 4;
   align-self: end;
-  filter: drop-shadow(6px -3px 15px #000033);
  }
 
 
