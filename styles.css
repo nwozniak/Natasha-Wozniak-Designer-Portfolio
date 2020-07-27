@@ -145,7 +145,6 @@ ul {
 
 .project-role-title{
   margin: 1rem 0 0 -10rem;
-  margin-left: -10rem;
   color: white;
   opacity: .6;
   line-height: 1.8rem;
@@ -921,6 +920,11 @@ ul {
   padding: 2rem;
 }
 
+#implementation{
+  width: 146px;
+
+}
+
 .icon-label{
   opacity: .8;
   text-align: center;
@@ -963,12 +967,12 @@ ul {
   background-size: cover;
 }
 .global-photo{
-  grid-row: 1 / 5;
+  grid-row: 2 / 5;
   grid-column: 1 / 4;
-  background-image: url(/NW-Designer-Developer-Portfolio/images/Patan\ graphic.png);
+  display: flex;
   background-size: cover;
   z-index: 4;
-  filter: drop-shadow(-2px 7px 4px #001742);
+  filter: drop-shadow(5px 7px 4px #001742);
 }
 
 .global-text-wrapper{
@@ -1055,7 +1059,7 @@ ul {
   white-space: nowrap;
   line-height: 2rem;
   margin-left: 4rem;
-  opacity: .9;
+  opacity: .8;
  }
 
  .second-indent{
@@ -1137,3 +1141,134 @@ ul {
     transform: rotate(-90deg);
     padding-left: 9rem;
  }
+
+/* Contact Section */
+
+
+.have-idea-page {
+  display: grid;
+  grid-template-rows: 8% 72% 20%;
+  grid-template-columns: 20% 60% 12% 8%;
+  background-image: linear-gradient(to bottom,#65738D, #001843);
+}
+.have-idea-title{
+  grid-column: 2;
+  color: white;
+  opacity: .6;
+  line-height: 1.8rem;
+  font-size: 5rem;
+  margin: 9rem 0 0 -3rem;
+}
+ .bulb-svg {
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 4;
+}
+.question-mark {
+  font-size: 49rem;
+  color: white;
+  grid-row: 2;
+  grid-column: 2;
+  z-index: 1;
+  opacity: .2;
+  margin: -4rem 0rem 0 43rem;
+  animation: 4s after-bulb 1 forwards;
+}
+
+/* Animation */
+#cord {
+  stroke-dasharray: 4500px;
+  animation: 2s draw-cord 1 forwards;
+}
+#dot {
+  animation: 1s dot-appear 1 forwards;
+}
+#bulb {
+  stroke-dasharray: 1500px;
+  animation: 3s bulb-on 1 forwards;
+}
+#halo {
+  opacity: 0;
+  animation: .7s glowing-light 1 forwards;
+  animation-delay: 2.2s;
+ } 
+#filament_right, #filament_left{
+  stroke-dasharray: 500px;
+  animation: 3s inner-bulb-on 1 forwards;
+}
+#filament_top{
+  stroke-dasharray: 1000px;
+  animation: 3s inner-filament-on 1 forwards;
+}
+@keyframes glowing-light {
+  from {
+    opacity: 0;
+     }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bulb-on {
+  from {
+    stroke-dashoffset: 1500px;
+     }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes inner-bulb-hide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes inner-bulb-on {
+  from {
+    stroke-dashoffset: 1000;
+     }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes inner-filament-on {
+  from {
+    stroke-dashoffset: 2000px;
+     }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-cord {
+  from{
+    stroke-dashoffset: 4500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+} 
+@keyframes dot-appear{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes after-bulb{
+  0% {
+    opacity:0;
+  }
+  65% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.3;
+  }
+}

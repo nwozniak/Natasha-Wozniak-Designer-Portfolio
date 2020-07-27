@@ -109,9 +109,6 @@ grid-template-columns: 7% 56% 23% 14%;
   line-height: 2.5rem;
   font-weight: 500;
 }
-.global-photo{
-  opacity: 0.6;
-}
 .global-text-wrapper{
   padding-left: 0;
   margin-left: 0;
@@ -124,9 +121,7 @@ grid-template-columns: 7% 56% 23% 14%;
 .global-text p{
   font-size: 1.8rem;
 }
-.about-jewelry-graphic{
-  background-image: url(/NW-Designer-Developer-Portfolio/images/Mobile_About\ Jewelry\ Curlicues.png);
-}
+
 .jewelry-card-container{
   grid-row: 2 / 4;
   grid-column: 2 / 4;
@@ -187,6 +182,12 @@ grid-template-columns: 7% 56% 23% 14%;
   font-size: 1rem;
 }
 
+/* All cover Pages */
+.project-role-title{
+  margin-left: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
 /* Huntre Equine Cover and Slides */
 .cover-page-he{
   grid-template-columns: 7% 56% 23% 14%;
@@ -262,13 +263,14 @@ grid-template-columns: 7% 56% 23% 14%;
 }
 
 .lc-desktop {
-  width: 118%;
+  width: 112%;
   margin-left: 2rem;
+  margin-top: 4.6rem;
 }
 
 .lc-mobile {
-  width: 65%;
-  margin: 0 0 2rem 0rem;
+  width: 63%;
+  margin: 0;
 }
 
 .LC-slide-items-wrapper{
