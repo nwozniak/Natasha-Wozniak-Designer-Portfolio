@@ -51,13 +51,13 @@ img {
 .NUM-red{color: #C82537;}
 .NUM-gradient{background-image: linear-gradient(to right, #9BA2B5, #d9d7d9)}
 
-.about-blue{background-color:rgba(52, 76, 119,0.8);}
+.about-blue{background-color:rgba(52, 76, 119,0.85);}
 
 /* FP CSS Modifications */
 
 
 /* Homepage Right Arrow Positioning */
-.fp-viewing-Homepage-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio1-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio2-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio3-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio4-0 .fp-controlArrow.fp-next  {
+.fp-viewing-Homepage-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio1-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio2-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio3-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio4-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio5-0 .fp-controlArrow.fp-next {
   right:8%;
   border-width: 5rem;
   border-color: transparent;
@@ -68,9 +68,12 @@ img {
   opacity: 0;
 }
 
+{
+  background: rgba(52,76,119, 0.85);
+}
 
-/* removing navigation */
-body.fp-viewing-Homepage-0 #fp-nav, 
+
+/* removing navigation */ 
 body.fp-viewing-Homepage-1 #fp-nav,
 body.fp-viewing-Homepage-2 #fp-nav,
 body.fp-viewing-Homepage-3 #fp-nav,
@@ -87,10 +90,16 @@ body.fp-viewing-Portfolio3-2 #fp-nav,
 body.fp-viewing-Portfolio3-3 #fp-nav,
 body.fp-viewing-Portfolio4-1 #fp-nav,
 body.fp-viewing-Portfolio4-2 #fp-nav,
-body.fp-viewing-Portfolio4-3 #fp-nav{
+body.fp-viewing-Portfolio4-3 #fp-nav,
+body.fp-viewing-Homepage-0 #fp-nav{
   display:none;
 }
 /* SVG classes */
+.ABOUT-cls-2{
+  fill: none;
+  stroke:#D89E44;
+  stroke-width: 4px;
+}
 .HE-cls-2 {
   fill: none;
   stroke:#faf6ea;
@@ -348,6 +357,468 @@ ul {
   font-size: 2.5rem;
 }
 
+/* Website Home Page */
+
+.about-cover-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30.7% 30.7% 30.7% 8%;
+  grid-template-rows: 20% 15% 40% 15%;
+  background-image: url(./images/About\ Page\ background.png);
+  background-size: cover;
+}
+
+.about-color-block{
+  grid-row: 1/ 6;
+}
+
+.about-me {
+  color: #F0EBDB;
+  grid-column-start: 4;
+  grid-row: 4 /5;
+  display: flex;
+  align-self: flex-end;
+  flex-flow: column;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.about-right-nav{
+  grid-column-start: 4;
+  grid-row-start: 3;
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid #f0ebdb;
+  border-top: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  z-index: 2;
+  margin-left: 1.4rem;
+  margin-bottom: 16rem;
+}
+.fp-viewing-Homepage-0 .fp-controlArrow.fp-next{
+  right: 0%;
+}
+
+.home-title-wrapper { 
+  display: flex;
+  grid-row: 1;
+  grid-column: 1;
+}
+.logo {
+  z-index: 1;
+  padding: 0 3rem;
+  width: 120%;
+}
+
+.home-second-line{
+  grid-row: 2;
+  opacity: .85;
+  margin: 0 0 0 2rem;
+}
+
+ .vert-stripe{
+  opacity: .85;
+  z-index: 1;
+  height: 3rem;
+  margin-top: 3.6rem;
+}
+
+.home-pg-title{
+  color: #001843;
+  opacity: .85;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding: 1.3rem;
+  white-space: nowrap;
+}
+
+.home-page-gallery{
+  grid-row: 3;
+  grid-column: 1/ 4;
+  display: flex;
+}
+
+.portfolio-nav-btn{
+  grid-row: 5;
+  width: 80%;
+}
+.horizontal-btn{
+  width: 76%;
+}
+.vertical-btn{
+  opacity:0;
+}
+.overlay-title{
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  z-index: 6;
+  color : rgb(237, 234, 223);
+  opacity : 0.8;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tech-gallery-box{
+  grid-row: 3;
+  grid-column: 1;
+  position: relative;
+}
+.tech{
+  grid-column: 1;
+}
+.nonprofit-gallery-box{
+ grid-row: 3;
+ grid-column: 2;
+ position: relative;
+}
+.nonprofit{
+  grid-column: 2;
+}
+.retail-gallery-box{
+  grid-row: 3;
+  grid-column: 3;
+  position: relative;
+}
+.retail{
+  grid-column: 3;
+}
+
+
+
+
+
+/* Offering and Tools Slide */
+
+.about-slide-one{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 30% 20% 30% 10%; 
+  background: linear-gradient(64deg, rgba(51, 70, 105, 1) 0%, rgba(59, 78, 111, 1) 12.49%, rgba(83, 99, 128, 1) 32.36%, rgba(120, 133, 156, 1) 57.13%, rgba(172, 180, 194, 1) 85.57%, rgba(201, 206, 215, 1) 100%);;
+}
+
+.about-slide-content-wrapper{
+  grid-column: 2;
+  grid-row: 2/ span3;
+  display: flex;
+  height: fit-content;
+}
+
+.offerbox-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 8% 25% 34% 33%;
+  padding-right: 4rem;
+}
+
+.offerbox-title{
+  grid-column: 1/ span2;
+  font-weight : bold;
+  font-size : 2rem;
+  text-transform : uppercase;
+  color : #334669;
+  margin-left: 1rem;
+  z-index: 4;
+}
+
+.tools{
+  margin-top: 0.1rem;
+}
+.offerbox-title-block{
+  background-color: #FDCD81;
+  grid-column: 1/ span2;
+  grid-row: 1;
+}
+.offer-list-title{
+  white-space: nowrap;
+  grid-row: 1/ 2;
+  grid-column: 2;
+  z-index: 2;
+  align-self: center;
+  padding-right: 5rem;
+}
+
+.offerbox-label{
+  transform: rotate(-90deg) ;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #334669;
+  align-self: center;
+  justify-self: center;
+  grid-column: 1;
+  z-index: 4;
+  margin: -0.8rem;
+}
+.digital{
+  grid-row: 2;
+}
+.print{
+  grid-row: 3;
+}
+
+.mograph{
+  grid-row: 4;
+  text-align: right;
+}
+
+.offer-label-overlay{
+  background-color: white;
+  opacity: .5;
+  grid-column: 1/ 2;
+  grid-row: 1/ 5;
+  z-index: 2;
+}
+.offerbox-digital-block{
+  background-color: #FCC062;
+  grid-row: 2;
+  grid-column: 1/ span2;
+}
+.offer{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #334669;
+  font-size: 1.5rem;
+}
+
+.offers-digital{
+  grid-row: 2;
+  grid-column: 2;
+  z-index: 10;
+}
+
+.offerbox-print-block{
+  background-color: #F8A457;
+  grid-row: 3;
+  grid-column: 1/ span2;
+}
+
+.offers-print{
+  grid-row: 3;
+  grid-column: 2;
+  z-index: 10;
+}
+
+.offerbox-mograph-block{
+  background-color: #F3884C;
+  grid-row: 4;
+  grid-column: 1/ span2;
+}
+
+.offers-mograph{
+  grid-row: 4;
+  grid-column: 2;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.logo-grid-box{
+  background-color: rgba(255, 255, 255, .3);
+  display: flex;
+  flex-direction: column;
+ }
+
+.logo-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem 2rem;
+  margin: 0 3rem 2rem 3rem;
+}
+
+
+
+.logos{
+   object-fit: contain;
+   height: 7rem;
+}
+
+.slide-two{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 28% 12% 20% 40%; 
+  background-image: linear-gradient(to bottom,#65738D, #001843);
+  background-size: cover;
+}
+.global-photo{
+  grid-row: 2 / 5;
+  grid-column: 1 / 4;
+  display: flex;
+  background-size: cover;
+  z-index: 4;
+  filter: drop-shadow(5px 7px 4px #001742);
+}
+
+.global-text-wrapper{
+  grid-row: 1 / 3;
+  grid-column: 2 / 4;
+  display: flex;
+  line-height: 1rem;
+  padding-left: 10rem;
+  z-index: 10;
+  margin-left: 10rem;
+}
+
+.global-text h1{
+  font-size: 5rem;
+  color: #D89E44;
+  text-align: right;
+}
+
+.global-text p{
+  font-size: 2.8rem;
+  text-align: right;
+  line-height: 1em;
+  color: white;
+}
+
+.slide-three{
+  background-color: #001843;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 13% 17% 60% 10%;
+  grid-template-rows: 15% 70% 15%; 
+}
+
+.about-jewelry-graphic{
+  grid-row: 1 / 4;
+  grid-column: 1 / 5;
+  z-index: 4;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.jewelry-card-container{
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  display: flex;
+  z-index: 8;
+  margin-top: 2rem;
+}
+
+.about-side-arrows {
+  grid-row: 2;
+  align-self: center;
+}
+
+.right-arrow {
+  grid-column: 4;
+  align-self: center;
+}
+
+ .jewelry-card-ring{
+  align-self: flex-end;
+  width: 39%;
+  z-index: 10;
+ }
+
+ .jewelry-card-bracelet {
+  align-self: flex-start;
+  width: 39%;
+  margin-right: -7rem;
+  margin-left: 11rem;
+ }
+ .about-jewelry-title-wrap{
+   grid-row: 1;
+   grid-column: 1 / 3;
+   z-index: 8;
+ }
+
+ .about-jewelry-bold {
+  text-transform: uppercase;
+  font-weight: 550;
+  color: white;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  line-height: 2rem;
+  margin-left: 4rem;
+  opacity: .8;
+ }
+
+ .second-indent{
+   margin-left:8rem;
+ }
+
+ .third-indent{
+   margin-left: 12rem;
+ }
+
+ .jewelry-card-text{
+  align-self: flex-end;
+  justify-self: left;
+  color: white;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-right: -17rem;
+ }
+
+ .slide-four{
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 10% 80% 10%;
+   grid-template-rows: 40% 20% 40%;
+   background-size: cover;
+   background-color: #E95232;
+ }
+
+ .nepal-cutaway{
+  grid-row: 3;
+  grid-column: 1 /4;
+  z-index: 4;
+  align-self: end;
+ }
+
+
+ .gradient-cutaway{
+  grid-column: 1 /5;
+  grid-row: 1 /5;
+  clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to bottom,#65738D, #001843);
+ }
+
+ .SS-logo-large{
+  grid-row: 2 /3;
+  grid-column: 3;
+  margin-left: -14rem;
+  z-index: 10;
+  width: 140%;
+ }
+
+ .about-SS{
+  z-index: 12;
+  grid-row: 1;
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem -5rem 2rem;
+ }
+ .about-SS-text{
+  color: white;
+  text-align: right;
+  font-weight: 400;
+  font-size: 2rem;
+ }
+
+ .about-SS-bold{
+  color: white;
+  font-weight: 400;
+  font-size: 2.8rem;
+ }
+
+ .rainas-photo-credit{
+  transform: rotate(-90deg); */
+    grid-column: 1;
+    z-index: 10;
+    color: white;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    padding-left: 9rem;
+ }
+
 /* Listen Closely Specific Slide Classes */
 .LC-slide-title-wrapper{
   grid-row: 1 ;
@@ -522,7 +993,9 @@ ul {
 .NUM-slide-title {
   margin-right: 2rem;
 }
-
+.num-slide-size{
+  width: 82%;
+}
 .cyber-title {
   font-size: 4rem;
   text-align: right;
@@ -561,8 +1034,10 @@ ul {
 }
 
 .num-logo {
+  padding-top: 1rem;
   padding-left: 3rem;
-  width: 50%;
+  width: 42%;
+  height: 42%;     
 }
 
 .num-slides {
@@ -586,79 +1061,6 @@ ul {
 }
 
 
-/* Home Cover Page */
-.home-page {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10% 35% 35% 20%;
-  grid-template-rows: 20% 60% 20%;
-  background-image: url("svgs/Neutral\ Terrace.svg");
-  background-size: cover;
-}
-
-.home-page-graphic {
-  grid-column: 1/ span 5;
-  grid-row: 1/ span 5;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.logo {
-  z-index: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column: 1 / span 2;
-  justify-self: stretch;
-  padding: 3em;
-  width: 100%;
-}
-.home-title-wrapper { 
-  display: flex;
-  flex-direction: column;
-  grid-row: 2;
-  grid-column: 2;
-}
-
-.home-first-line-wrapper{
-  display: inline-flex;
-  margin: 4rem 24rem 3rem 0;
-}
-
-.home-second-line{
-  margin-top: -8rem;
-}
-
- .vert-stripe{
-  opacity: .8;
-  z-index: 1;
-  height: 4rem;
-  margin-top: 4rem;
-}
-
-.home-pg-title {
-  color: #001843;
-  opacity: .7;
-  font-weight: 200;
-  font-size: 3rem;
-  padding: 1.3rem;
-  white-space: nowrap;
-}
-
-.designer-pad{
-  padding-bottom: 5rem;
-}
-
-
-
-.home-down-arrow {
-  border-top: 1.7rem solid #001843;
-  border-top: 1.7rem solid #001843;
-  margin-left: 2rem;
-  margin-top: 3rem
-}
-
-/* vertical text "work samples" */
 
 
 
@@ -870,277 +1272,6 @@ ul {
   margin-left: -5rem;
 }
 
-/* About Main Page */
-
-/* About Page */
-
-.about-cover-page {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 20% 60% 12% 8%;
-  grid-template-rows: 10% 80% 10%;
-  background-image: url(images/About\ Page\ background.png);
-  background-size: cover;
-}
-/* delete this!!
-*/
-.placeholder-text{
-  grid-row: 2;
-  grid-column: 2;
-  align-self: center;
-  justify-self: center;
-  font-size: 2rem;
-}
-
-.about-logo{
-  width: 50%;
-}
-
-.about-me {
-  color: #F0EBDB;
-  grid-column-start: 4;
-  grid-row: 2 /3;
-  align-self: flex-end;
-  z-index: 2;
-  white-space: nowrap;
-  margin-bottom: 6rem;
-}
-
-
-.icon-wrapper {
-  grid-column: 2;
-  grid-row: 2;
-  margin-top: 20rem;
-  opacity: .8;
-  display: flex;
-  z-index: 2;
-}
-
-.icon-padding{
-  padding: 2rem;
-}
-
-#implementation{
-  width: 146px;
-
-}
-
-.icon-label{
-  opacity: .8;
-  text-align: center;
-  color: #001843;
-}
-.work-samples-wrapper {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: end;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.samples-text {
-  transform: rotate(-90deg);
-  z-index: 2; 
-  white-space: nowrap;
-  color: #001843;
-  opacity: .7;
-  font-weight: 200;
-  font-size: 2em;
-}
-
-
-.slide-one{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 28% 12% 20% 40%; 
-  background-color: rgb(4, 4, 61);
-}
-
-.slide-two{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 28% 12% 20% 40%; 
-  background-image: linear-gradient(to bottom,#65738D, #001843);
-  background-size: cover;
-}
-.global-photo{
-  grid-row: 2 / 5;
-  grid-column: 1 / 4;
-  display: flex;
-  background-size: cover;
-  z-index: 4;
-  filter: drop-shadow(5px 7px 4px #001742);
-}
-
-.global-text-wrapper{
-  grid-row: 1 / 3;
-  grid-column: 2 / 4;
-  display: flex;
-  line-height: 1rem;
-  padding-left: 10rem;
-  z-index: 10;
-  margin-left: 10rem;
-}
-
-.global-text h1{
-  font-size: 5rem;
-  color: #D89E44;
-  text-align: right;
-}
-
-.global-text p{
-  font-size: 2.8rem;
-  text-align: right;
-  line-height: 1em;
-  color: white;
-}
-
-.slide-three{
-  background-color: #001843;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 13% 17% 60% 10%;
-  grid-template-rows: 15% 70% 15%; 
-}
-
-.about-jewelry-graphic{
-  grid-row: 1 / 4;
-  grid-column: 1 / 5;
-  z-index: 4;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.jewelry-card-container{
-  grid-row: 1 / 3;
-  grid-column: 3 / 4;
-  display: flex;
-  z-index: 8;
-  margin-top: 2rem;
-}
-
-.about-side-arrows {
-  grid-row: 2;
-  align-self: center;
-}
-
-.right-arrow {
-  grid-column: 4;
-  align-self: center;
-}
-
- .jewelry-card-ring{
-  align-self: flex-end;
-  width: 39%;
-  z-index: 10;
- }
-
- .jewelry-card-bracelet {
-  align-self: flex-start;
-  width: 39%;
-  margin-right: -7rem;
-  margin-left: 11rem;
- }
- .about-jewelry-title-wrap{
-   grid-row: 1;
-   grid-column: 1 / 3;
-   z-index: 8;
- }
-
- .about-jewelry-bold {
-  text-transform: uppercase;
-  font-weight: 550;
-  color: white;
-  font-size: 3.5rem;
-  white-space: nowrap;
-  line-height: 2rem;
-  margin-left: 4rem;
-  opacity: .8;
- }
-
- .second-indent{
-   margin-left:8rem;
- }
-
- .third-indent{
-   margin-left: 12rem;
- }
-
- .jewelry-card-text{
-  align-self: flex-end;
-  justify-self: left;
-  color: white;
-  font-size: 2rem;
-  white-space: nowrap;
-  margin-right: -17rem;
- }
-
- .slide-four{
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 10% 80% 10%;
-   grid-template-rows: 40% 20% 40%;
-   background-size: cover;
-   background-color: #E95232;
- }
-
- .nepal-cutaway{
-  grid-row: 3;
-  grid-column: 1 /4;
-  z-index: 4;
-  align-self: end;
- }
-
-
- .gradient-cutaway{
-  grid-column: 1 /5;
-  grid-row: 1 /5;
-  clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
-  background-image: linear-gradient(to bottom,#65738D, #001843);
- }
-
- .SS-logo-large{
-  grid-row: 2 /3;
-  grid-column: 3;
-  margin-left: -14rem;
-  z-index: 10;
-  width: 140%;
- }
-
- .about-SS{
-  z-index: 12;
-  grid-row: 1;
-  grid-column: 1 / 4;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 2rem -5rem 2rem;
- }
- .about-SS-text{
-  color: white;
-  text-align: right;
-  font-weight: 400;
-  font-size: 2rem;
- }
-
- .about-SS-bold{
-  color: white;
-  font-weight: 400;
-  font-size: 2.8rem;
- }
-
- .rainas-photo-credit{
-  transform: rotate(-90deg); */
-    grid-column: 1;
-    z-index: 10;
-    color: white;
-    white-space: nowrap;
-    transform: rotate(-90deg);
-    padding-left: 9rem;
- }
 
 /* Contact Section */
 

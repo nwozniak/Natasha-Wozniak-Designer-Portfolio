@@ -21,6 +21,10 @@
   left: -28px;
 }
 
+body.fp-viewing-Homepage-0 #fp-nav.fp-left {
+  display: none;
+}
+
 .slide-layout{
   display: grid;
   grid-template-columns: 15% 70% 15%;
@@ -36,12 +40,13 @@
 /* About me Cover Page */
 
 .about-cover-page{
-grid-template-columns: 7% 56% 23% 14%;
+  grid-template-columns: 86% 14%;
+  grid-template-rows: 23% 8% 23% 23% 23%;
 }
 
 .about-logo{
-  width: 110%;
-  padding-top: 1rem;
+  width: 66%;
+  margin-bottom: .8rem;
 }
 .about-intro{
   grid-row: 1;
@@ -54,41 +59,41 @@ grid-template-columns: 7% 56% 23% 14%;
   font-size: 2rem;
   line-height: 0.5rem;
 }
-
-.icon-wrapper{
-  flex-direction: column;
-  margin-top: 10rem;
-  margin-left: 4rem;
+.tech-gallery-box, .tech{
+  grid-row: 3;
+  grid-column: 1;
 }
-
-.icon-padding{
-  width: 56%;
-  padding: 0;
+.nonprofit-gallery-box, .nonprofit{
+grid-row: 4;
+grid-column: 1
 }
-
+.retail-gallery-box, .retail{
+  grid-row: 5;
+  grid-column: 1;
+}
 .vert-stripe{
-  margin-top: .5rem;
-  height: 3rem;
+  display: none;
 }
 .icon-label{
   margin: 0rem;
 }
 #about-right-arrow{
   width: 40%;
-  margin-left: 2rem;
+  margin-left: -1rem;
   opacity: .8;
 }
 .slide-one{
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 28% 12% 20% 40%;
 }
-.work-samples-wrapper{
-  margin-bottom: -5rem;
-}
-.samples-text{
-  margin: 6.6rem 0 3rem 1.6rem;
+
+.portfolio-text{
+  margin: 10rem 2rem 0 1rem;
 }
 .home-down-arrow{
+  border-top: 1.5rem solid #F0EBDB;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   margin-left: 4rem;
 }
 .home-title-wrapper{
@@ -96,19 +101,91 @@ grid-template-columns: 7% 56% 23% 14%;
   align-items: start;
   justify-items: center;
   margin-right: -4rem;
+  flex-direction: column;
 }
 .home-first-line-wrapper {
-  margin: 0rem 17rem 0rem 0;
+  margin: 0rem 20rem 0rem -23px;
+}
+.home-second-line {
+  margin: -8rem 0 0 0;
 }
 
 .home-pg-title{
   margin-block-start: .5rem;
   margin-block-end: .5rem;
   padding: 0 .5rem;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: .8rem;
+  font-weight: 500
 }
+.home-page-gallery{
+  flex-flow: column;
+}
+.about-me{
+  grid-column: 2;
+  grid-row: 5;
+  margin-bottom: 3rem;
+}
+.about-color-block{
+  grid-column-start: 2;
+}
+.about-right-nav{
+  margin-left: .8rem;
+}
+.portfolio-nav-btn {
+  grid-row: 5;
+  width: 8%;
+  z-index: 15;
+  grid-column: 1;
+}
+.vertical-btn{
+  z-index: 10;
+  opacity: 1;
+}
+.horizontal-btn{
+  display: none;
+}
+/* Offerings slide */
+.about-slide-content-wrapper{
+  grid-row: 1/ 5;
+  grid-column: 1/ span2;
+  display: flex;
+  flex-direction: column;
+}
+.offerbox-wrapper{
+  height: 50%;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.offerbox-title{
+  font-size: 1.6rem;
+}
+.offer-list-title{
+  padding-right: 0;
+}
+.offerbox-label{
+  font-size: 1.5rem;
+}
+.offer{
+  font-size: 1rem;
+}
+.tools{
+  white-space: nowrap;
+  margin-bottom: 0rem;
+  margin-left: 3rem;
+}
+.logo-grid-box{
+  margin: 0 3rem 2rem 3rem;
+}
+.logo-grid{
+  grid-gap: 1rem 0rem;
+  margin: 1rem 0rem 2rem 3rem;
+  width: 68%;
+}
+.logos{
+  height: 3.4rem;
+}
+
 .global-text-wrapper{
   padding-left: 0;
   margin-left: 0;
