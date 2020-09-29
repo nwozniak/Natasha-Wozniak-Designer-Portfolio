@@ -17,7 +17,10 @@
 <body>
   <!-- div defining portions to which fullpage.js will be applied -->
 <div id="fullPage">
-  <!-- Home Page -->
+
+  <!-- Each section is identified in the comments with the ID applied by the fullpage data-anchors, followed by a general description of the content-->
+  <!-- #HomePage Landing Page for Site -->
+
   <div class="section">
     <div class="slide">
       <div class="about-cover-page">
@@ -41,13 +44,15 @@
         <h1 class="overlay-title retail">Luxury Retail</h1>
       
         
-        <btn class="portfolio-nav-btn">
+        <btn class="portfolio-nav-btn" onclick="location.href='#Portfolio1';" style="cursor: pointer">
           <img src="./images/Portfolio button.png" alt="scroll down to portfolio" href=#Portfolio1 class="horizontal-btn">
           <img src="./images/vertical portfolio btn.png" alt="scroll down to portfolio" href=#Portfolio1 class="vertical-btn">
         </btn>
       </div>  
     </div> 
-  <!--Offerings slide: top row 2nd horizontal slide  -->
+
+  <!--#Homepage/1 Offerings and Skills Page-->
+
       <div class="slide">
         <section class="about-slide-one">
           <section class="about-slide-content-wrapper">
@@ -116,11 +121,10 @@
         </section>
       </div>
   
-  <!-- About Me Slide One -->
+  <!-- #Homepage/2 About Me-Training Page -->
   <div class="slide">
-    <section class="slide-one LC-neutral-text about-cover-page">
-      <p class="placeholder-text">I started with years of training in art and design (placeholder slide)</p>
-      <div class="slide-left">
+    <section class="training-page-grid"> 
+      <div class="slide-left training-page-arrow">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -128,13 +132,26 @@
           </g>
         </svg>
       </div>
-      <div class="slide-right">
+      <div class="slide-right training-page-arrow">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
           <path id="Path_2" data-name="Path 2" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
           <path id="Path_3" data-name="Path 3" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
           </g>
         </svg>
+      </div>
+      <h1 class="training-title">I have training in:</h1>
+      <div class="training-bar bar-one">
+        <h2 class="training-overlay">Traditional art techniques and design principles</h2>
+      </div>
+      <div class="training-bar bar-two">
+        <h2 class="training-overlay">Digital design software and workflow</h2>
+      </div>
+      <div class="training-bar bar-three">
+        <h2 class="training-overlay">Front-end Development</h2>
+      </div>
+      <div class="training-bar bar-four">
+        <h2 class="training-overlay">3d Modeling and Animation</h2>
       </div>
     </section>
   </div>
@@ -155,18 +172,8 @@
           src= "images/Patan_graphic_mobile.png" 
           alt="View of Patan, Nepal">
         </picture>
-        </picture>
         <div class="slide-left">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-          <defs>
-            <style>
-              .ABOUT-cls-2{
-                fill: none;
-                stroke:#D89E44;
-                stroke-width: 4px;
-              }
-            </style>
-          </defs>
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
               <path id="Path_3" data-name="Path 3" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -175,15 +182,6 @@
         </div>
         <div class="slide-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-            <defs>
-              <style>
-                .ABOUT-cls-2 {
-                  fill: none;
-                  stroke:#D89E44;
-                  stroke-width: 4px;
-                }
-              </style>
-            </defs>
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
             <path id="Path_3" data-name="Path 3" class="ABOUT-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -229,15 +227,6 @@
         </picture>
         <div class="slide-left about-side-arrows">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-            <defs>
-              <style>
-                .ABOUT-cls-3{
-                  fill: none;
-                  stroke:#fdfdfd;
-                  stroke-width: 4px;
-                }
-              </style>
-            </defs>
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
               <path id="Path_3" data-name="Path 3" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -246,15 +235,6 @@
         </div>
         <div class="slide-right about-side-arrows right-arrow">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-            <defs>
-              <style>
-                .ABOUT-cls-3 {
-                  fill: none;
-                  stroke:#ffffff;
-                  stroke-width: 4px;
-                }
-              </style>
-            </defs>
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
             <path id="Path_3" data-name="Path 3" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -282,15 +262,6 @@
         <img src="./images/Sangsangai Logo.png" alt="" class="SS-logo-large">
       <div class="slide-left about-side-arrows">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-          <defs>
-            <style>
-              .ABOUT-cls-3{
-                fill: none;
-                stroke:#fdfdfd;
-                stroke-width: 4px;
-              }
-            </style>
-          </defs>
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
             <path id="Path_3" data-name="Path 3" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -317,15 +288,6 @@
       </p>
       <div class="slide-right about-side-arrows">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
-          <defs>
-            <style>
-              .ABOUT-cls-3 {
-                fill: none;
-                stroke:#ffffff;
-                stroke-width: 4px;
-              }
-            </style>
-          </defs>
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
             <path id="Path_3" data-name="Path 3" class="ABOUT-cls-3" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -336,15 +298,16 @@
   </div>
   </div>
 
-   <!-- Huntre Equine Cover Page-->
+
+  <!--#Portfolio1: Huntre Equine Home Slide -->
 
   <div class="section" >
     <div class="slide" id="HE-mainpage">
       <div class="cover-pg-he">
         <h1 class="project-role-title">Project: annual newsletter<br>
           Role: content strategist/ designer</h1>
-        <a href="#homepage"class="up-arrow"></a>
-          <a class="down-arrow" href="LC page.html"></a>
+          <a class="up-arrow"href="#Homepage"></a>
+          <a class="down-arrow" href="#Portfolio2"></a>
             <div class="he-cover-slide">
               <img src="images/Huntre Equine Cover-01.png" alt="Huntre equine cover slide">
             </div> 
@@ -354,15 +317,6 @@
             <a class="next-arrow-container" href="#HE-firstslide">
               <h2 class="view-he vert-nav">view</h2> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="67.721" height="172.186" viewBox="0 0 67.721 172.186">
-                  <defs>
-                    <style>
-                      .HE-cls-1 {
-                        fill: none;
-                        stroke: #fcc062;
-                        stroke-width: 4px;
-                      }
-                    </style>
-                  </defs>
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                   <path id="Path_2" data-name="Path 2" class="HE-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
                   <path id="Path_3" data-name="Path 3" class="HE-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -373,15 +327,16 @@
         <div class="color-block HE-yellow"></div>
      </div>
     </div>
-    <!-- Huntre Equine Slides -->
-    <!-- SLIDE 1 -->
-    <div class="slide HE-neutral slide-layout" id="HE-firstslide">
+
+    <!--#Portfolio1/1 Huntre Equine Strategy Slide-->
+
+    <div class="slide HE-neutral slide-layout">
       <div class="left-colorbar HE-yellow"></div>
       <div class="right-colorbar HE-yellow"></div>
         <section class="slide-title-box"> 
           <h2 class="slide-title HE-yellow-text">Huntré Equine<br>2019 Newsletter Redesign</h2>
         </section>
-        <a class="slide-left" href="#HE-mainpage">
+        <a class="slide-left">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -389,7 +344,7 @@
             </g>
           </svg>
         </a>
-      <a class="slide-right" href="#HE-secondslide">
+      <a class="slide-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -400,9 +355,9 @@
         <section class="slide-items-wrapper">
           <img src="./images/Huntre Equine Cover-01.png" alt="" class="slide-items-image">
         </section>
-          <section class="objective-approach-credits">
-            <h1 class="slide-subject HE-blue-text">Strategy</h1> 
-            <p class="slide-items-text HE-blue-text"> Huntre Equine had a long list of achievements to showcase that they needed to highlight to stakeholders, while also showcasing the beauty and culture of Manipur. Photos and film stills from Manipur were combined with graphic elements to illustrate the narrative, in collaboration with founder L. Somi Roy</p>
+          <section class="slide-detail-text-box">
+            <h1 class="slide-detail-box-h1 HE-blue-text">Strategy</h1> 
+            <p class="slide-detail-box-p HE-blue-text"> Huntre Equine had a long list of achievements to showcase that they needed to highlight to stakeholders, while also showcasing the beauty and culture of Manipur. Photos and film stills from Manipur were combined with graphic elements to illustrate the narrative, in collaboration with founder L. Somi Roy</p>
           </section>
         <nav class="slide-menu">
           <a class="HE-blue-text"href="#">contact/</a>
@@ -410,7 +365,7 @@
         </nav>
     </div>
 
-      <!--HE Slide Two  -->
+  <!--#Portfolio1/2 Huntre Equine Design Page-->  
     
     <div class="slide HE-neutral slide-layout">
       <div class="left-colorbar HE-yellow"></div>
@@ -418,7 +373,7 @@
         <section class="slide-title-box"> 
           <h2 class="slide-title HE-yellow-text">Huntré Equine<br>2019 Newsletter Redesign</h2> 
         </section>
-          <a class="slide-left" href="#HE-firstslide">
+          <a class="slide-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                 <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                   <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -426,7 +381,7 @@
                 </g>
             </svg>
           </a>
-          <a class="slide-right" href="#HE-thirdslide">
+          <a class="slide-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -437,9 +392,9 @@
           <section class="slide-items-wrapper">
             <img src="./images/Manipur Polo Infographics-03.png" alt="" class="slide-items-image">
           </section>
-          <section class="objective-approach-credits">
-            <h1 class="slide-subject HE-blue-text">Design</h1> 
-            <p class="slide-items-text HE-blue-text">
+          <section class="slide-detail-text-box">
+            <h1 class="slide-detail-box-h1 HE-blue-text">Design</h1> 
+            <p class="slide-detail-box-p HE-blue-text">
               The color of the Huntre Equine logo provided a starting point, with a palette of red and orange tones. The horse and polo stick icons incorporated an infographic and additional logos were created for sub-projects of the organization.</p>
           </section>
         <nav class="slide-menu">
@@ -449,7 +404,7 @@
     </div>
   
 
-    <!-- HE Third Slide -->
+    <!--#Portfolio1/3 Huntre Equine Results Page-->
 
     <div class="slide HE-neutral slide-layout">
       <div class="left-colorbar HE-yellow"></div>
@@ -457,7 +412,7 @@
         <section class="slide-title-box"> 
           <h2 class="slide-title HE-yellow-text">Huntré Equine<br>2019 Newsletter Redesign</h2>  
         </section>
-          <a class="slide-left" href="#HE-secondslide">
+          <a class="slide-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                 <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                   <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -465,7 +420,7 @@
                 </g>
             </svg>
           </a>
-          <a class="slide-right" href="#HE-fourthslide">
+          <a class="slide-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -476,9 +431,9 @@
           <section class="slide-items-wrapper">
             <img src="./images/Kumbi Village-08-11.png" alt="" class="slide-items-image">
           </section>
-          <section class="objective-approach-credits">
-              <h1 class="slide-subject HE-blue-text">Results</h1> 
-                <p class="slide-items-text HE-blue-text">
+          <section class="slide-detail-text-box">
+            <h1 class="slide-detail-box-h1 HE-blue-text">Results</h1> 
+            <p class="slide-detail-box-p HE-blue-text">
                 After receiving the newsletter, the head of IIT, a university system with 250 campuses across India committed to fundraising for Huntré Equine. Additionally, the head of an international hotel company will visit to explore building a Kumbi Polo Ranch.</p> 
           </section>
         <nav class="slide-menu">
@@ -488,14 +443,15 @@
     </div>
 
 
-        <!-- HE Fourth Slide -->
+     <!--#Portfolio1/4 Huntre Equine Results Page-->
+
     <div class="slide HE-neutral slide-layout">
       <div class="left-colorbar HE-yellow"></div>
       <div class="right-colorbar HE-yellow"></div>
         <section class="slide-title-box"> 
           <h2 class="slide-title HE-yellow-text">Huntré Equine<br>2019 Newsletter Redesign</h2>
         </section>
-      <a class="slide-left" href="#HE-thirdslide">
+      <a class="slide-left">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
           <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -503,7 +459,7 @@
           </g>
         </svg>
       </a>
-      <a class="slide-right" href="#HE-mainpage">
+      <a class="slide-right">
         <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
             <path id="Path_2" data-name="Path 2" class="HE-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -514,9 +470,9 @@
       <section class="slide-items-wrapper">
         <img src="./images/About Huntre Equine-02-02.png" alt="" class="slide-items-image">
       </section>
-        <section class="objective-approach-credits">
-            <h1 class="slide-subject HE-blue-text">Credits</h1> 
-              <p class="slide-items-text HE-blue-text">
+      <section class="slide-detail-text-box">
+        <h1 class="slide-detail-box-h1 HE-blue-text">Credits</h1> 
+        <p class="slide-detail-box-p HE-blue-text">
                 <strong> Design:</strong> Natasha Wozniak<br><br>
                 <strong>Content:</strong> L. Somi Roy<br><br>
                 <strong>Photos:</strong> Manipur Tourism<br> Huntré Equine<br> Manipur Photo Club<br> Kamini Media</p>
@@ -528,22 +484,22 @@
     </div>
   </div> 
 
-   <!-- Listen Closely Cover Page-->
+   <!-- #Portfolio2 Listen Closely Cover Page-->
 
-  <div class="section"   name="listenClosely">
+  <div class="section">
     <div class="slide">
       <div class="cover-pg-lc">
         <h1 class="project-role-title">Project: non-profit film website<br>
           Role: brand design and website implementation</h1>
-        <a class="up-arrow"></a>
-          <a class="down-arrow"></a>
+          <a class="up-arrow"href="#Portfolio1"></a>
+          <a class="down-arrow" href="#Portfolio3"></a>
             <div class="lc-mobile">
               <img src="images/Listen Closely Mobile View.png" alt="Listen CLosely mobile view">
             </div> 
             <div class="lc-desktop"> 
               <img src="images/Listen Closely Screen-01.png" alt="Listen Closely desktop view">
             </div>          
-          <a class="next-arrow-container" href="#LC-firstslide">
+          <a class="next-arrow-container">
             <h2 class="view-lc vert-nav">view</h2> 
               <svg xmlns="http://www.w3.org/2000/svg" width="67.721" height="172.186" viewBox="0 0 67.721 172.186">
                 <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
@@ -556,8 +512,9 @@
         <div class="color-block LC-neutral"></div>
       </div>
     </div>
-     <!-- Listen Closely Slides -->
-    <!-- SLIDE 1 -->
+
+     <!-- #Portfolio2/1 Listen Closely Strategy Slide -->
+
     <div class="slide LC-neutral slide-layout">
       <div class="left-colorbar LC-purple"></div>
       <div class="right-colorbar LC-gradient"></div>
@@ -565,7 +522,7 @@
             <img src="./svgs/Listen Closely.svg" alt="Listen Closely Logo" class="LC-logo">
             <h2 class="slide-title LC-slide-title LC-purple-text">Brand Identity and Website Implementation</h2>
           </section>
-        <a class="slide-left" href="#LC-mainpage">
+        <a class="slide-left">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -573,7 +530,7 @@
             </g>
          </svg>
         </a>
-        <a class="slide-right" href="#LC-secondslide">
+        <a class="slide-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -582,12 +539,13 @@
           </svg>
         </a>
         <section class="LC-slide-items-wrapper">
-          <img src="./images/Listen Closely Screen-01.png" alt="" class="slide-items-monitor">
+          <img src="./images/Listen_Closely_Experts_Screen.png" alt="" class="slide-items-monitor">
+          <img src="./images/Listen_Closely_Experts_Screen.png" alt="" class="LC-mobile">
         </section>
         <section class="LC-approach-credits">
-          <h1 class="slide-subject LC-slide-header LC-yellow-text LC-approach-credits-titles">Strategy</h1> 
-            <p class="slide-items-text LC-neutral-text LC-approach-credits-text">
-              The film producer needed a dedicated site in order to showcase the preview and the subjects. It needed to be easy for her to update herself with new donors and subjects, so a highly customizable template from Squarespace was selected</p>
+          <h1 class="slide-subject LC-yellow-text">Strategy</h1> 
+            <p class="slide-items-text LC-neutral-text">
+              The film producer needed a dedicated site in order to showcase the film preview and the experts. It needed to be easy for her to update herself with new donors and subjects, so a Squarespace template was selected and optimized for viewing on mobile and desktop.</p>
         </section>
           <nav class="slide-menu">
             <a class="LC-grey-text"href="#">contact/</a>
@@ -595,7 +553,46 @@
           </nav>
     </div> 
   
-        <!-- LC Slide Two  -->
+      <!-- #Portfolio2/2 Listen Closely Design Slide -->
+      <div class="slide LC-neutral slide-layout">
+        <div class="left-colorbar LC-purple"></div>
+        <div class="right-colorbar LC-gradient"></div>
+          <section class="LC-slide-title-wrapper"> 
+              <img src="./svgs/Listen Closely.svg" alt="Listen Closely Logo" class="LC-logo">
+              <h2 class="slide-title LC-slide-title LC-purple-text">Brand Identity and Website Implementation</h2>
+          </section>
+            <a class="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+                <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+                  <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+                  <path id="Path_3" data-name="Path 3" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+                </g>
+              </svg>
+            </a>
+            <a class="slide-right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+                <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+                  <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+                  <path id="Path_3" data-name="Path 3" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+                </g>
+              </svg>
+            </a>
+              <section class="LC-style-guide">
+                <img src="./images/Listen Closely website guide-mobile-05.png" alt="" class="LC-style-guide">
+              </section>
+              <section class="LC-approach-credits" id="LC-mobile-scrolling">
+                <h1 class="slide-subject LC-yellow-text ">Design</h1> 
+                  <p class="slide-items-text LC-neutral-text">
+                    A color scheme was chosen to harmonize with the color profile of the film. In place of a graphic logo, we chose a script style font that could also be used on the site and other locations as a header text.</p>
+              </section>
+              <nav class="slide-menu">
+                <a class="LC-grey-text"href="#">contact/</a>
+                <a class="LC-grey-text"href="#about-main">about</a>
+              </nav>
+      </div>
+    
+
+      <!-- #Portfolio2/3 Listen Closely Credits Slide -->
       
     <div class="slide LC-neutral slide-layout">
       <div class="left-colorbar LC-purple"></div>
@@ -604,7 +601,7 @@
             <img src="./svgs/Listen Closely.svg" alt="Listen Closely Logo" class="LC-logo">
             <h2 class="slide-title LC-slide-title LC-purple-text">Brand Identity and Website Implementation</h2>
         </section>
-          <a class="slide-left" href="#LC-firstslide">
+          <a class="slide-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -612,7 +609,7 @@
               </g>
             </svg>
           </a>
-          <a class="slide-right" href="#LC-mainpage">
+          <a class="slide-right return-home">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="LC-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -621,42 +618,40 @@
             </svg>
           </a>
             <section class="LC-slide-items-wrapper">
-              <img src="./images/Listen Closely Mobile View.png" alt="" class="LC-slide-mobile">
-              <p class="LC-testimonial LC-neutral-text"><em>"Working with Natasha was a smooth and very positive experience. I needed a simple, professional site for my documentary film. She was responsive to my needs, helped me clarify what I *really* wanted, gave me great options and made changes quickly. I've received numerous compliments on the site and would happily work with Natasha again."</em><br><br>
+              <img src="./images/Listen Closely Producer Page.png" alt="" class="LC-slide-mobile">
+              <p class="LC-testimonial"><em>"Working with Natasha was a smooth and very positive experience. She was responsive to my needs, helped me clarify what I *really* wanted, gave me great options and made changes quickly."</em><br><br>
                 <strong>-Alana Sheeren</strong></p>
             </section>
-            <section class="LC-approach-credits" id="LC-mobile-scrolling">
-              <h1 class="slide-subject LC-slide-header LC-yellow-text LC-approach-credits-titles">Design</h1> 
-                <p class="slide-items-text LC-neutral-text LC-approach-credits-text">
-                  We agreed on a color scheme that matched the stills from the film to be used throughout the site. In place of a graphic logo, we chose a script style font that could also be used in the site as a header text, giving it a cohesive look and feel throughout.</p>
-                <h1 class="slide-subject LC-slide-header LC-yellow-text LC-approach-credits-titles">Credits</h1>
-                <p class="slide-items-text LC-neutral-text LC-approach-credits-text">
+            <section class="LC-approach-credits">                 
+                <h1 class="slide-subject LC-yellow-text">Credits</h1>
+                <p class="slide-items-text LC-neutral-text">
                   <strong> Brand Style and Website Implementation:</strong> Natasha Wozniak<br><br>
                   <strong>Film Production and Content:</strong> Alana Sheeren<br><br>
                   <strong>Photos:</strong> John Phaneuf 
                 </p>
               <form><input type="button" value="Visit the Site" onclick="openLC()" class="btn-visit-site LC-button"></form>
             </section>
-            <nav class="slide-menu" id="scroll-arrow-slide-menu">
+            <nav class="slide-menu">
               <a class="LC-grey-text"href="#">contact/</a>
               <a class="LC-grey-text"href="#about-main">about</a>
             </nav>
     </div>
   </div>
 
-   <!--Sangsangai Cover Page -->
-  <div class="section porfolio3" >
+   <!--#Portfolio4: Sangsangai Cover Page -->
+
+  <div class="section" >
     <div class="slide">
       <div class="cover-pg-ss">
         <h1 class="project-role-title">Project: non-profit website<br>
           Role: UX strategy and implementation</h1>        
-        <a class="up-arrow" href="LC-mainpage"></a>
-        <a class="down-arrow" href="NUM-mainpage"></a>
+          <a class="up-arrow"href="#Portfolio2"></a>
+          <a class="down-arrow" href="#Portfolio4"></a>
           <div class="ss-mobile">
             <img src="images/Sangsangai Mobiles.png" alt="Sangsangai mobile view">
           </div>
           <div class="ss-mobile-single"><img src="./images/Sangsangai Mobile VIew Bimala Didi@2x.png" alt=""></div> 
-            <a href="#SS-firstslide" class="next-arrow-container">
+            <a class="next-arrow-container">
               <h2 class="view-ss vert-nav">view</h2> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="67.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1"  transform="translate(1.723 1.015)">
@@ -670,8 +665,8 @@
       </div>
     </div>
  
+    <!--#Portfolio3/1 Sangsangai Strategy Slide -->
 
-    <!-- Sangsangai Slide 1 -->
     <div class="slide SS-neutral slide-layout">
       <img src="./svgs/Mountain Lines.svg"  class="SS-full-graphic-overlay">
         <div class="left-colorbar SS-orange"></div>
@@ -699,9 +694,9 @@
         <section class="slide-items-wrapper">
           <img src="./images/Sangsangai Monitor VIew Bimala Didi.png" alt="" class="SS-slide-monitor-view">
         </section>
-        <section class="SS-approach-credits">
-          <h1 class="slide-subject SS-approach-credits SS-black-text">Strategy</h1> 
-            <p class="slide-items-text SS-black-text SS-block-text"> The rebuilding project was very complex, so the first task was to compile all of the possible information and organize it into a narrative. After feedback from a variety of experts and the board, the content was edited down to the most relevant information for potential donors. The non-profit also needed to have integration with a donor database to organize fundraising efforts.
+        <section class="slide-detail-text-box text-box-spacing">
+          <h1 class="slide-detail-box-h1 SS-black-text">Strategy</h1> 
+            <p class="slide-detail-box-p SS-black-text"> The rebuilding project was very complex, so the first task was to compile all of the possible information and organize it into a narrative. After feedback from a variety of experts and the board, the content was edited down to the most relevant information for potential donors with a link to donate connected to a database.
         </section>
         <nav class="slide-menu">
           <a class="SS-black-text"href="#">contact/</a>
@@ -709,7 +704,8 @@
         </nav>
     </div>
   
-    <!-- Sangsangai Slide 2 -->
+       <!--#Portfolio3/2 Sangsangai Design Slide  -->
+
     <div class="slide SS-neutral slide-layout">
       <img src="./svgs/Nepal Map Background.svg"  class="SS-full-graphic-overlay">
         <div class="left-colorbar SS-orange"></div>
@@ -737,11 +733,9 @@
         <section class="slide-items-wrapper">
           <img src="./images/Sangsangai Rainaskot Landing Page.png" alt="" class="SS-slide-monitor-view">
         </section>
-        <section class="SS-approach-credits">
-          <h1 class="slide-subject SS-approach-credits SS-black-text">Design</h1> 
-            <p class="slide-items-text SS-black-text SS-block-text">Photos were edited and selected to promote the narrative and using brand colors and fonts provided by brand consultant, Tania Marie Roulston.  I used these to create individual graphics and text content, using Squarespace. These photos and concepts also became posters and social media graphics, providing a consistent theme.<br<br>
-
-              The donation form was linked to the main database of the organization so that information about online donors could be automatically entered and incorporated, allowing for easy use of the donor data in future campaigns.   
+        <section class="slide-detail-text-box text-box-spacing">
+          <h1 class="slide-detail-box-h1 SS-black-text">Design</h1> 
+            <p class="slide-detail-box-p SS-black-text">Using brand colors and fonts provided by consultant Tania Marie Roulston and photos from the work locations I created individual graphics and text content. The graphics also became posters and social media graphics, providing a consistent theme   
         </section>
         <nav class="slide-menu">
           <a class="SS-black-text"href="#">contact/</a>
@@ -749,7 +743,8 @@
         </nav>
     </div>    
 
-    <!-- Sangsangai Slide 3 -->
+       <!--#Portfolio3/3 Sangsangai Credits Slide -->
+
     <div class="slide SS-neutral slide-layout">
       <img src="./images/Community Center Drawing.svg"  class="SS-full-graphic-overlay">
         <div class="left-colorbar SS-orange"></div>
@@ -758,7 +753,7 @@
             <img src="./images/Sangsangai Logo.png" alt="Sangsangai Logo" class="SS-logo">
               <h2 class="slide-title SS-orange-text SS-slide-title">Website Design and Implementation</h2>
           </section>
-            <a class="slide-left" href="#SS-secondslide">
+            <a class="slide-left">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                     <path id="Path_2" data-name="Path 2" class="SS-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -766,7 +761,7 @@
                   </g>
               </svg>
             </a>
-            <a class="slide-right" href="#SS-mainpage">
+            <a class="slide-right return-home">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                     <path id="Path_2" data-name="Path 2" class="SS-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -783,9 +778,9 @@
               <img src="./images/Barbandi phone view.png" class="SS-slide-mobile-view">
             </div>      
           </section>
-          <section class="SS-approach-credits">
-            <h1 class="slide-subject SS-approach-credits SS-black-text">Credits</h1> 
-              <p class="slide-items-text SS-black-text SS-block-text">    <strong>Copy and Graphics:</strong> Natasha Wozniak <br><br>
+          <section class="slide-detail-text-box text-box-spacing">
+            <h1 class="slide-detail-box-h1 SS-black-text">Credits</h1> 
+              <p class="slide-detail-box-p SS-black-text"> <strong>Copy and Graphics:</strong> Natasha Wozniak <br><br>
                 <strong>Photographs:</strong> Jason Carter Rinaldi, Natasha Wozniak, Kiran Giri, Bibek K. Pandit <br><br>              
                 <strong>Brand identity and logo:</strong> Tania Marie Roulston</p>
                 <form><input type="button" value="Visit the Site" onclick="openSS()" class="btn-visit-site SS-button"></form>
@@ -796,30 +791,33 @@
             </nav>
     </div>
   </div>
-  
 
-     <!-- Natasha Wozniak Jewelry Cover Page -->
-  <div class="section porfolio4" id="NWDesign">
-    <div class="cover-pg-nwd">
+  <!-- #Portfolio4: Natasha Wozniak Jewelry Design Home Page -->
+
+  <div class="section">
+    <div class="cover-pg-nwd slide">
       <h1 class="project-role-title">Project: marketing materials for jewelry<br>
         Role: art direction, photography, graphics</h1>
-      <a class="up-arrow" href="SS page.html"></a> 
-      <a class="down-arrow" href="about.html"></a>
+      <a class="up-arrow" href="#Portfolio3"></a> 
+      <a class="down-arrow" href="#Portfolio5"></a>
         <div class="nwd-card">
-          <img src="images/Jewelry Cards Turquoise Earring Web.png" alt="Turquoise Ring Card">
+          <picture class="">
+            <source 
+              media="(min-width: 900px)"
+              srcset="images\Jewelry_Cards_Turquoise_Earring_Web.png"  
+            />
+            <source 
+              media="(min-width: 600px)"
+              srcset="images\Jewelry_Cards_Turquoise_Ear_Mobile.png"
+            />
+            <img
+            src= "images\Jewelry_Cards_Turquoise_Ear_Mobile.png" 
+            alt="Jewelry promotion graphics">
+          </picture>
         </div>
         <div class="next-arrow-container">
           <h2 class="view-lc vert-nav">view</h2> 
             <svg xmlns="http://www.w3.org/2000/svg" width="67.721" height="172.186" viewBox="0 0 67.721 172.186">
-            <defs>
-              <style>
-                .NWD-cls-1 {
-                  fill: none;
-                  stroke: #E3D9BB;
-                  stroke-width: 4px;
-                }
-              </style>
-            </defs>
             <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
               <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
               <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
@@ -828,21 +826,162 @@
         </div>
        <h1 class="vert-title-bold nwd-cover-title">Retail<span class="vert-title-reg">product cards</span></h1>
      <div class="color-block NWD-neutral"></div>
-      </div>
-      </div>
+    </div>
+ 
+  <!--#Portfolio4/1 Natasha Wozniak Design Strategy Slide -->
 
-  <!-- Numerati Cover Page-->
+  <div class="slide slide-layout NWD-neutral">
+      <div class="left-colorbar NWD-blue"></div>
+      <div class="right-colorbar NWD-blue"></div>
+      <section class="nwd-slide-title-box">
+        <img src="./images/NW Jewelry Logo.png" alt="" class="nwd-logo">
+        <h1 class="NWD-blue-text">Photography and Graphics for a Jewelry Marketing Campaign</h1>
+      </section>     
+        <a class="slide-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+          <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+            <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+            <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+          </g>
+        </svg>
+      </a>
+      <a class="slide-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+            <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+              <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+              <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+            </g>
+        </svg>
+      </a>
+      <div class="nwd-card">
+        <picture class="">
+          <source 
+            media="(min-width: 900px)"
+            srcset="images\Jewelry_Cards_Scrolling_Cuff_Web.png"  
+          />
+          <source 
+            media="(min-width: 600px)"
+            srcset="images\Jewelry_Cards_Scrolling_Cuff_Mobile.png"
+          />
+          <img
+          src= "images\Jewelry_Cards_Scrolling_Cuff_Mobile.png"
+          alt="Jewelry promotion graphics">
+        </picture>
+      </div>
+      <article class="slide-detail-text-box">
+        <h2 class="slide-detail-box-h1 NWD-neutral-text">Strategy</h2>
+        <p class="slide-detail-box-p NWD-neutral-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex molestias qui incidunt veritatis. Iste accusantium veritatis ad ea quis!</p>
+    </article>
+    </div>
+  
+
+   <!--#Portfolio4/3 Natasha Wozniak Design Design Slide -->
+
+    <div class="slide slide-layout NWD-neutral">
+      <div class="left-colorbar NWD-blue"></div>
+      <div class="right-colorbar NWD-blue"></div>
+      <section class="nwd-slide-title-box">
+        <img src="./images/NW Jewelry Logo.png" alt="" class="nwd-logo">
+        <h1 class="NWD-blue-text">Photography and Graphics for a Jewelry Marketing Campaign</h1>
+      </section>     
+        <a class="slide-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+          <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+            <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+            <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+          </g>
+        </svg>
+      </a>
+      <a class="slide-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+            <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+              <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+              <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+            </g>
+        </svg>
+      </a>
+      <div class="nw-card">
+        <picture class="">
+          <source 
+            media="(min-width: 900px)"
+            srcset="images\Jewelry_Card_Moodboard_Web.png"  
+          />
+          <source 
+            media="(min-width: 600px)"
+            srcset="images\Jewelry_Card_Moodboard_Mobile.png"
+          />
+          <img
+          src= "images\Jewelry_Card_Moodboard_Mobile.png"
+          alt="Jewelry promotion graphics">
+        </picture>
+      </div>
+      <article class="slide-detail-text-box">
+        <h2 class="slide-detail-box-h1 NWD-neutral-text">Design</h2>
+        <p class="slide-detail-box-p NWD-neutral-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex molestias qui incidunt veritatis. Iste accusantium veritatis ad ea quis!</p>
+    </article>
+    </div>
+
+  <!--#Portfolio4/4 Natasha Wozniak Design Strategy Slide -->
+
+    <div class="slide slide-layout NWD-neutral">
+      <div class="left-colorbar NWD-blue"></div>
+      <div class="right-colorbar NWD-blue"></div>
+      <section class="nwd-slide-title-box">
+        <img src="./images/NW Jewelry Logo.png" alt="" class="nwd-logo">
+        <h1 class="NWD-blue-text">Photography and Graphics for a Jewelry Marketing Campaign</h1>
+      </section>     
+        <a class="slide-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+          <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+            <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+            <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+          </g>
+        </svg>
+      </a>
+      <a class="slide-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
+            <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
+              <path id="Path_2" data-name="Path 2" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
+              <path id="Path_3" data-name="Path 3" class="NWD-cls-1" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4589.666 -1408)"/>
+            </g>
+        </svg>
+      </a>
+      <div class="nw-card">
+        <picture class="">
+          <source 
+            media="(min-width: 900px)"
+            srcset="images\Jewelry_Cards_Turq_Ring_Web.png"  
+          />
+          <source 
+            media="(min-width: 600px)"
+            srcset="images\Jewelry_Cards_Turq_Ring_Mobile.png"
+          />
+          <img
+          src= "images\Jewelry_Cards_Turq_Ring_Mobile.png"
+          alt="Jewelry promotion graphics">
+        </picture>
+      </div>
+      <article class="slide-detail-text-box">
+        <h2 class="slide-detail-box-h1 NWD-neutral-text">Results</h2>
+        <p class="slide-detail-box-p NWD-neutral-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex molestias qui incidunt veritatis. Iste accusantium veritatis ad ea quis!</p>
+        <h2 class="slide-detail-box-h1 NWD-neutral-text">Credits</h2>
+        <p class="slide-detail-box-p NWD-neutral-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex molestias qui incidunt veritatis. Iste accusantium veritatis ad ea quis!</p>
+    </article>
+    </div>
+  </div>
+  <!-- #Portfolio5 Numerati Cover Page-->
+
   <div class="section" >
     <div class="slide">
       <div class="cover-page-num NUM-gradient">
         <h1 class="project-role-title">Project: tech-related illustration<br>
           Role: design consultant/ illustrator</h1>
-          <a href="#"class="up-arrow"></a>
-            <a class="down-arrow" href="#"></a>
+          <a class="up-arrow" href="#Portfolio4"></a>
+            <a class="down-arrow" href="#Contact"></a>
               <div class="num-cover-slide">
                 <img src="images/Geospatial Insight Press Release Image_02.07.20_16.9.png" alt="Numerati Partners cover slide">
               </div> 
-            <a class="next-arrow-container" href="#NUM-firstslide">
+            <a class="next-arrow-container">
               <h2 class="NUM-dusky-blue-text vert-nav">view</h2> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="67.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
@@ -856,8 +995,9 @@
       </div>
     </div>
 
-    <!-- Numerati Slide 1 Cybersecurity-->
-    <div class="slide NUM-gradient slide-layout no-nav">
+    <!--#Portfolio5/1 Numerati Cybersecurity Slide -->
+
+    <div class="slide NUM-gradient slide-layout">
       <img class="num-full-graphic-overlay" src="images/Data Stream Background-01.png">
         <div class="left-colorbar NUM-dusky-blue"></div>
         <div class="right-colorbar NUM-dusky-blue"></div>
@@ -865,7 +1005,7 @@
             <img class="num-logo" src="./images/Numerati Logo.png">
             <h1 class="slide-subject num-mobile-title NUM-red">Cybersecurity</h1> 
           </section>
-            <a class="slide-left" href="#NUM-mainpage">
+            <a class="slide-left">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -873,7 +1013,7 @@
               </g>
             </svg>
           </a>
-        <a class="slide-right" href="#NUM-secondslide">
+        <a class="slide-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                 <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                   <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -883,7 +1023,6 @@
         </a>
         <section class="slide-items-wrapper">
           <img src="./images/Cybersecurity_data and circuit_Numerati blue.png" alt="" class="slide-items-image num-slide-size">
-          <!-- <p class="slide-items-text NUM-neutral-text num-slide-subtitle"> Media and presentation Image </p> -->
         </section>
         <nav class="slide-menu">
           <a class="NUM-dusky-blue-text"href="#">contact/</a>
@@ -891,7 +1030,7 @@
         </nav>
     </div>
 
-      <!--Numerati Slide Two  -->
+      <!--#Portfolio5/2 Numerati VR/AR Slide  -->
     
     <div class="slide NUM-gradient slide-layout no-nav">
       <img class="num-full-graphic-overlay" src="images/Fiber Waves.png">
@@ -901,7 +1040,7 @@
             <img class="num-logo" src="./images/Numerati Logo.png">
             <h1 class="slide-subject num-mobile-title NUM-red vr-title">VR/AR</h1> 
           </section>
-            <a class="slide-left" href="#NUM-firstslide">
+            <a class="slide-left">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
               <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                 <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -909,7 +1048,7 @@
               </g>
             </svg>
             </a>
-            <a class="slide-right" href="#NUM-thirdslide">
+            <a class="slide-right">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                     <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -929,7 +1068,7 @@
     </div>
   
 
-        <!-- Numerati Third Slide -->
+        <!--#Portfolio5/3 Numerati Automotive Telematics Slide -->
 
     <div class="slide NUM-gradient slide-layout">
       <img class="num-part-graphic-overlay" src="images/Nodes and Edges.png">
@@ -939,7 +1078,7 @@
             <img class="num-logo" src="./images/Numerati Logo.png">
             <h1 class="slide-subject num-mobile-title NUM-red auto-tele-title">Automotive Telematics</h1> 
           </section>          
-            <a class="slide-left" href="#NUM-secondslide">
+            <a class="slide-left">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                     <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -947,7 +1086,7 @@
                   </g>
                 </svg>
             </a>
-            <a class="slide-right" href="#NUM-mainpage">
+            <a class="slide-right return-home">
               <svg xmlns="http://www.w3.org/2000/svg" width="62.721" height="172.186" viewBox="0 0 67.721 172.186">
                   <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.723 1.015)">
                     <path id="Path_2" data-name="Path 2" class="NUM-cls-2" d="M4602.666,1408l50.67,86-50.67,84.139" transform="translate(-4602.666 -1408)"/>
@@ -965,18 +1104,17 @@
             </nav>
     </div>
   </div>
-            <!-- Contact Information -->
+
+  <!-- #Contact -->
+
   <div class="section">
     <div class="slide have-idea-page">
       <h1 class="have-idea-title">Need help expressing your</h1>
-      <h1 class="question-mark">?</h1>
+      <h1 class="question-mark-invisible">?</h1>
       <?xml version="1.0" encoding="utf-8"?>
-        <svg  class="bulb-svg"version="1.1" id="Idea_Bulb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="Idea_Bulb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 1767.2 628.6" style="enable-background:new 0 0 1767.2 628.6;" xml:space="preserve">
           <style type="text/css">
-            .bulb-lines{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-linejoin:round;}
-            .bulb-glow{fill:url(#halo_1_);}
-            .dot-fill{fill:#FFFFFF;}
           </style>
             <path id="cord" class="bulb-lines" d="M3.8,470.3C78.3,592,152.9,625,206.6,624.1c47.8-0.2,75.1-48.7,78.3-85.2
               c2.7-30.9-1-134.2,61.3-127.1c10.4,1.2,41.5,17.9,39.6,50c-1.2,20.6-11.9,52-43.4,56.6c-27.1,3.9-76.2-47.9-76.4-85.9
@@ -989,7 +1127,7 @@
               c18.1,23.7,60.4,24.2,85.4,18.6c39.5-8.8,65.5-19.1,85.6-35.9c10.6-8.8,10-27-4-35.2c-12.9-7.5-27.8,0.7-28.8,16.3
               c-1.7,26.7,25.1,44.8,61.8,51.1c53.6,9.1,159.5-60,180.1-17.4c7.9,16.3-5.5,29.6-18.9,28.3c-12.2-1.2-24.2-15.4-23.9-32
               c0.5-33.1,36.7-37,60.9-28.1c55.8,20.5,117.6,105.1,140.4,18.1"/>
-            <path id="bulb" class="bulb-lines" d="M1478.4,464.2c2.9-2.2,4.8-3.8,6.8-5.2c4.8-3.2,5.5-5.8,0.6-10.1
+            <path id="bulb" class="bulb-lines"  d="M1478.4,464.2c2.9-2.2,4.8-3.8,6.8-5.2c4.8-3.2,5.5-5.8,0.6-10.1
               c-3.1-2.7-4.5-7.3-6.5-11.2c-1.6-3.1-2.9-6.4-4.3-9.6c-3.9-9.3-10.8-18.4-11.2-27.8c-0.9-21.9-9.6-40.2-20.1-58.3
               c-7-12-13.9-24-21.3-35.8c-34.8-55.3-11.3-111.6,20.6-142.9c64.1-63.1,176.4-44.6,214.8,35.8c16.5,34.6,16.8,68.9-2.7,102.8
               c-12.7,22.1-25.3,44.4-37.2,67c-3.3,6.5-5.1,13.7-5.4,21c-0.7,15-3.1,29-14.1,40.3c-1.8,1.8-1.9,5.3-2.5,8c-0.4,1.8,0.4,4.6-0.5,5.3
@@ -1000,10 +1138,10 @@
               c10.9-23.9,24.6-46.5,36.4-69.9c16.6-32.7,13-64.6-6.6-94.7c-34.7-53.3-113.5-68.6-169.8-34.1c-40.1,24.6-69.7,79.4-39.4,133.7
               c10.3,18.5,21.8,36.5,30.1,55.9c6.5,15.1,10.1,31.8,12.6,48.2c2.6,16.7,7.3,22.4,23.9,22.3C1510.6,422.2,1523.8,422.2,1536.9,422.3
               L1536.9,422.3z"/>
-            <path id="filament_right" class="bulb-lines" d="M1568.5,410.7h-12c-0.6-0.9-0.9-1.9-1.1-2.9c1.2-26.3,1.9-52.6,4-78.8
+            <path id="filament_right" class="bulb-lines"  d="M1568.5,410.7h-12c-0.6-0.9-0.9-1.9-1.1-2.9c1.2-26.3,1.9-52.6,4-78.8
               c0.5-6.4,5.1-12.7,8.3-18.8c11.1-21.4,22.3-42.7,33.8-63.8c1.3-2.5,4.8-3.8,7.2-5.7c-0.2,2.9,0.4,6.2-0.7,8.7
               c-11.2,24.2-22.9,48.1-33.8,72.4c-3.3,7.3-5.1,15.1-5.5,23C1568.1,366.3,1568.5,387.8,1568.5,410.7z"/>
-            <path id="filament_left" class="bulb-lines" d="M1517.8,410.8h-9.1c-0.7-18.4-2-36.5-1.8-54.6c0.3-15.7-3.4-31.2-10.7-45.1
+            <path id="filament_left" class="bulb-lines"  d="M1517.8,410.8h-9.1c-0.7-18.4-2-36.5-1.8-54.6c0.3-15.7-3.4-31.2-10.7-45.1
               c-10.3-20.1-19.5-40.8-29-61.3c-1.3-2.8-1.2-6.3-1.7-9.5c1.2-0.4,2.4-0.7,3.7-1.1c1.9,3.3,3.9,6.5,5.7,9.8
               c9.5,17.7,17.8,36.1,28.6,52.9c11.4,17.9,14.3,37,14.3,57.3V410.8z"/>
             <path id="filament_top" class="bulb-lines" d="M1495.2,241.6c3.5-8.2,6.2-14.6,10.3-24.4c4.4,9.8,7.4,16.4,10.8,24
@@ -1031,6 +1169,8 @@
     </div>
   </div>
 
+    <!-- #Contact/1 -->
+
   <!-- closing tag for fullpage.js --> 
 </div> 
  
@@ -1049,7 +1189,20 @@
       continuousHorizontal: true,
       verticalCentered: false,
 
+      afterLoad: function(origin, destination, direction){
+		    var loadedSection = this;
+
+        if(destination.anchor == 'Contact'){
+          var turnOn = document.getElementById("Idea_Bulb");
+          turnOn.className.baseVal = "bulb-svg"
+          var question = document.querySelector(".question-mark-invisible");
+          question.className = "question-mark";
+        }
+        
+      }
+
     })
+
   </script>
 
 <script>

@@ -43,6 +43,8 @@ img {
 .NWD-neutral {background-color: #F0F0CE;}
 .NWD-blue {background-color: #001843;}
 .NWD-text-box {background-color: #DADCC1;}
+.NWD-blue-text{color: #001843;}
+.NWD-neutral-text{color: #F0F0CE;}
 
 .NUM-dusky-blue{background-color: #3F4C68;}
 .NUM-dusky-blue-text{color: #3F4C68;}
@@ -85,12 +87,16 @@ body.fp-viewing-Portfolio1-3 #fp-nav,
 body.fp-viewing-Portfolio1-4 #fp-nav,
 body.fp-viewing-Portfolio2-1 #fp-nav,
 body.fp-viewing-Portfolio2-2 #fp-nav,
+body.fp-viewing-Portfolio2-3 #fp-nav,
 body.fp-viewing-Portfolio3-1 #fp-nav,
 body.fp-viewing-Portfolio3-2 #fp-nav,
 body.fp-viewing-Portfolio3-3 #fp-nav,
 body.fp-viewing-Portfolio4-1 #fp-nav,
 body.fp-viewing-Portfolio4-2 #fp-nav,
 body.fp-viewing-Portfolio4-3 #fp-nav,
+body.fp-viewing-Portfolio5-1 #fp-nav,
+body.fp-viewing-Portfolio5-2 #fp-nav,
+body.fp-viewing-Portfolio5-3 #fp-nav,
 body.fp-viewing-Homepage-0 #fp-nav{
   display:none;
 }
@@ -100,6 +106,17 @@ body.fp-viewing-Homepage-0 #fp-nav{
   stroke:#D89E44;
   stroke-width: 4px;
 }
+.ABOUT-cls-3{
+  fill: none;
+  stroke:#fdfdfd;
+  stroke-width: 4px;
+}
+.HE-cls-1 {
+  fill: none;
+  stroke: #fcc062;
+  stroke-width: 4px;
+}
+
 .HE-cls-2 {
   fill: none;
   stroke:#faf6ea;
@@ -116,6 +133,12 @@ body.fp-viewing-Homepage-0 #fp-nav{
   fill: none;
   stroke:#FDF8E4;
   stroke-width: 4px;
+  }
+
+  .NWD-cls-1 {
+    fill: none;
+    stroke: #E3D9BB;
+    stroke-width: 4px;
   }
 
 .NUM-cls-1 {
@@ -278,6 +301,9 @@ ul {
   z-index: 6;
   transform: rotate(180deg);
 }
+.return-home{
+  transform: rotate(180deg);
+}
 
 .slide-title-box {
   grid-row: 1;
@@ -295,11 +321,21 @@ ul {
   padding-left: 3rem;
 }
 
-.slide-subject {
+.slide-detail-text-box{
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;  
+  margin-left: 2rem;
+}
+.slide-detail-box-h1 {
   text-transform: uppercase;
   font-size: 5rem; 
   font-weight: 700;
 } 
+.slide-detail-box-p {
+  font-weight: 500;
+  margin: 02rem;
+}
 
 .slide-items-wrapper {
   grid-column: 2/ 4;
@@ -310,7 +346,7 @@ ul {
   transition-timing-function: ease-in-out;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
-.objective-approach-credits{
+.slide-side-title{
   grid-column: 3;
   grid-row: 1;
   z-index: 4;
@@ -357,7 +393,7 @@ ul {
   font-size: 2.5rem;
 }
 
-/* Website Home Page */
+/* #Homepage */
 
 .about-cover-page {
   height: 100vh;
@@ -489,7 +525,7 @@ ul {
 
 
 
-/* Offering and Tools Slide */
+/* #Homepage/1 Offering and Tools Slide */
 
 .about-slide-one{
   height: 100vh;
@@ -628,8 +664,6 @@ ul {
   margin: 0 3rem 2rem 3rem;
 }
 
-
-
 .logos{
    object-fit: contain;
    height: 7rem;
@@ -642,6 +676,52 @@ ul {
   grid-template-rows: 28% 12% 20% 40%; 
   background-image: linear-gradient(to bottom,#65738D, #001843);
   background-size: cover;
+}
+
+.training-page-grid{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: repeat(4, 25%) ;
+}
+.training-page-arrow{
+  grid-row: 2/ 4;
+  align-self: center;
+}
+.training-title{
+  grid-row: 1;
+  grid-column: 2/ 4;
+  z-index: 20;
+}
+.training-overlay{
+  justify-self: center;
+  align-self: center;
+  z-index: 6;
+  color: rgb(237, 234, 223);
+  opacity: 0.8;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.training-bar{
+  grid-column: 1/ 4;
+  display: flex;
+}
+.bar-one{
+  grid-row: 1;
+  background-color:#469183;
+}
+.bar-two{
+  grid-row: 2;
+  background-color: #6EA2B2;
+}
+.bar-three{
+  grid-row: 3;
+  background-color: #334669;
+}
+.bar-four{
+  grid-row: 4;
+  background-color: #001843;
 }
 .global-photo{
   grid-row: 2 / 5;
@@ -840,9 +920,7 @@ ul {
   padding: 2rem 0rem;
   margin-top: 0.2;
 }
-.LC-slide-header {
-  margin-left: 3rem;
-}
+
 .LC-slide-mobile{
   width: 32%;
   margin-left: 4rem;
@@ -857,9 +935,7 @@ ul {
 .LC-approach-credits-titles{
   margin: 2rem 0rem 0rem -5rem;
 }
-.LC-approach-credits-text{
-  margin-right: 5rem;
-}
+
 .LC-slide-items-wrapper{
   grid-column: 2 / 3;
   grid-row: 2 / 5;
@@ -867,15 +943,24 @@ ul {
   align-items: flex-start;
   margin-top: -1rem; 
 }
+.LC-style-guide{
+  grid-column: 2/ 3;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  width: 73%;
+  margin-top: 4rem;
+}
+
 
 .LC-testimonial{
-  font-size: 1.2rem;
+  font-size: 2rem;
   justify-content: space-around;
   margin: 0rem 7rem 0rem 3rem;
-  border-radius: .5rem;
   padding: 3rem;
-  box-shadow: 5px 5px 5px darkgrey;
-  background-color: #60374D;
+  color: #3E0C27;
 }
 
 .LC-button {
@@ -925,12 +1010,10 @@ ul {
   grid-column: 3;
   grid-row: 1;
   z-index: 4;
-  margin: 2rem 0rem 0rem -3rem;
 }
 
 .SS-block-text{
-  margin-right: 5rem;
-  padding-left: 7rem;
+  padding-left: 2rem;
 }
 .SS-slide-monitor-view{
   width: 55%;
@@ -1164,7 +1247,6 @@ ul {
   color: #FAEFea;
 }
 
-/* Listen CLosely Slide classes, see above*/
 
 
  /* Sangsangai Cover Page */
@@ -1207,7 +1289,7 @@ ul {
   color: #FDF8E4;
 }
 
-/* NW Design COver Page */
+/* #Portfolio4 Natasha Wozniak Jewelry Cover Slide */
 
 .cover-pg-nwd {
   background-color: #001843;
@@ -1218,10 +1300,8 @@ ul {
   grid-template-rows: 10% 80% 10%;
 }
 
-
-
  .nwd-card {
-  width: 100$; 
+  width: 100%; 
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   z-index: 1;
@@ -1245,6 +1325,21 @@ ul {
  .view-nwd {
   color: #E3D9BB;
 }
+.nwd-logo{
+  width: 50%;
+  height: 50%;
+  margin: 2rem;
+}
+.nwd-slide-title-box{
+  grid-row: 1;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 6;
+  
+}
+
 
 /* Numerati Cover Page */
 
@@ -1286,7 +1381,7 @@ ul {
   grid-column: 2;
   color: white;
   opacity: .6;
-  line-height: 1.8rem;
+  line-height: 4.8rem;
   font-size: 5rem;
   margin: 9rem 0 0 -3rem;
 }
@@ -1294,23 +1389,34 @@ ul {
   grid-column: 2;
   grid-row: 2;
   z-index: 4;
+  margin-top: 14rem;
+}
+.question-mark-invisible {
+  opacity: 0;
 }
 .question-mark {
-  font-size: 49rem;
+  font-size: 39rem;
   color: white;
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 3;
   z-index: 1;
   opacity: .2;
-  margin: -4rem 0rem 0 43rem;
+  margin: -4rem 0 0 0;
   animation: 4s after-bulb 1 forwards;
 }
+/* Lightbulb strokes and fills */
+.bulb-lines{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-linejoin:round;}
+.bulb-glow{fill:url(#halo_1_);}
+.dot-fill{fill:#FFFFFF;}
 
 /* Animation */
 #cord {
-  stroke-dasharray: 4500px;
+  stroke-dasharray: 4500px;  
+}
+.bulb-svg #cord {
   animation: 2s draw-cord 1 forwards;
 }
+
 #dot {
   animation: 1s dot-appear 1 forwards;
 }

@@ -288,9 +288,27 @@ grid-column: 1
   align-self: center;
 }
 
+.slide-detail-text-box{
+  grid-column: 2;
+  grid-row: 3;
+  margin-left: 0rem 
+}
+.slide-detail-box-h1{
+  font-size: 2rem;
+  text-align: center;
+}
+.slide-detail-box-p{
+  margin: 0 2rem;
+  color: black;
+}
+.text-box-spacing{
+  margin-top: 4.1rem;
+}
+
 .slide-items-text{
   padding: 0rem 1rem;
   font-size: 0.8rem;
+  color: black;
 }
 
 .slide-items-wrapper{
@@ -362,23 +380,6 @@ grid-column: 1
   margin-bottom: 6rem;
 }
 
-#LC-mobile-scrolling{
-  /* overflow-x: hidden; */
-  overflow: auto;
-  background-color: #fbfaea;
-}
-
-#scroll-arrow-slide-menu:before{
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: .8rem solid transparent;
-  border-right: .8rem solid transparent;
-  border-top: 1.6rem solid #3e0c27;
-  margin-top: -2rem;
-  opacity: .8;
-}
-
 .LC-approach-credits-titles {
   margin: 0rem;
   font-size: 3rem;
@@ -387,7 +388,7 @@ grid-column: 1
 
 .LC-approach-credits-text{
   color: #3e0c27;
-  font-size: 1rem;
+  font-size:.9rem;
   margin-right: 0rem;
 }
 
@@ -418,8 +419,7 @@ grid-column: 1
 .LC-testimonial{
   padding: 0.65rem;
   margin: 1rem 1rem 0rem 1rem;
-  border-radius: 0.3rem;
-  font-size: 0.62rem;
+  font-size: 0.8rem;
 }
 
 .slide-items-monitor{
@@ -429,9 +429,13 @@ grid-column: 1
 
 .LC-button{
   font-size: 1rem;
-  margin: 0.7rem;
+  margin: -0.5rem 0 0 0.7rem;
 }
-
+.LC-style-guide {
+  grid-row: 2;
+  width: 85%;
+  margin-top: 3rem;
+}
 /* Sangsangai Cover and Slides */
 .cover-pg-ss{
   grid-template-columns: 7% 56% 23% 14%;
@@ -478,7 +482,8 @@ grid-column: 1
 }
 
 .slide-subject{
-  font-size: 3rem;
+  padding-top: 1rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -497,8 +502,9 @@ grid-column: 1
   margin: 3rem 1rem 0 1rem;
 }
 
+
 .SS-landing-card-wrap{
-  width: 84%;
+  width: 79%;
 }
 
 .SS-slide-mobile-view{
@@ -506,19 +512,27 @@ grid-column: 1
 }
 
 .SS-button{
-  font-size: 1rem;
+  font-size: .8rem;
   margin: 0.7rem;
+  padding: .5rem;
 }
 
+/* NW Cover Page */
+.cover-pg-nwd{
+  grid-template-columns: 7% 56% 23% 14%;
+}
 /* Numerati Cover and Slides */
 
 .cover-page-num{
   grid-template-columns: 7% 56% 23% 14%;
 }
-.num-cover-slide{
+.num-cover-slide {
   width: 92%;
-  margin-top: 20rem;
   grid-column: 1 / 5;
+  grid-row: 2;
+  z-index: 1;
+  margin-left: -2rem;
+  margin-top: 18rem;
 }
 .num-logo{
   padding: 1rem 0 0 0;
@@ -535,12 +549,4 @@ grid-column: 1
 .num-part-graphic-overlay{
   grid-column: 2;
   opacity: 100%;
-}
-
-.num-cover-slide{
-  width: 162%;
-  margin-left: -1rem;
-  grid-column: 1 / 5;
-  z-index: 1;
-  margin-top: -1rem;
 }
