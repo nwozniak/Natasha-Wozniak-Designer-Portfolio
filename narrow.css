@@ -37,7 +37,7 @@ body.fp-viewing-Homepage-0 #fp-nav.fp-left {
 .slide-left{
   width: 50%;
 }
-/* About me Cover Page */
+/* #Homepage About me Cover Page */
 
 .about-cover-page{
   grid-template-columns: 86% 14%;
@@ -145,28 +145,29 @@ grid-column: 1
 .horizontal-btn{
   display: none;
 }
-/* Offerings slide */
-.about-slide-content-wrapper{
+/* Homepage/1 Offerings slide */
+
+.about-slide-content-wrapper {
   grid-row: 1/ 5;
   grid-column: 1/ span2;
   display: flex;
   flex-direction: column;
 }
-.offerbox-wrapper{
+.offerbox-wrapper {
   height: 50%;
   padding-right: 3rem;
   padding-left: 3rem;
 }
-.offerbox-title{
+.offerbox-title {
   font-size: 1.6rem;
 }
-.offer-list-title{
+.offer-list-title {
   padding-right: 0;
 }
-.offerbox-label{
+.offerbox-label {
   font-size: 1.5rem;
 }
-.offer{
+.offer {
   font-size: 1rem;
 }
 .tools{
@@ -186,6 +187,12 @@ grid-column: 1
   height: 3.4rem;
 }
 
+/* Homepage/2 Training Details */
+
+
+
+/* #Homepage/3 Global Studies */
+
 .global-text-wrapper{
   padding-left: 0;
   margin-left: 0;
@@ -198,6 +205,7 @@ grid-column: 1
 .global-text p{
   font-size: 1.8rem;
 }
+/* Hompage/4 About my jewelry business */
 
 .jewelry-card-container{
   grid-row: 2 / 4;
@@ -227,6 +235,7 @@ grid-column: 1
   margin-top: 3rem;
   font-size: 1.6rem;
 }
+/* #Homepage/5 About my role at Sangsangai */
 .gradient-cutaway{
   z-index: 4;
 }
@@ -258,6 +267,8 @@ grid-column: 1
 .placeholder-text{
   font-size: 1rem;
 }
+/* #Homepage/6 Resume Content */
+
 
 /* All cover Pages */
 .project-role-title{

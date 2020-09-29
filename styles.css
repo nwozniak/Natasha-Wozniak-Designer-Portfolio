@@ -899,6 +899,13 @@ ul {
     padding-left: 9rem;
  }
 
+ /* #Hompage/6 Resume Details */
+
+ .resume {
+  background-color: rgb(9, 126, 126);
+  height: 100vh;
+}
+
 /* Listen Closely Specific Slide Classes */
 .LC-slide-title-wrapper{
   grid-row: 1 ;
@@ -1375,7 +1382,7 @@ ul {
   display: grid;
   grid-template-rows: 8% 72% 20%;
   grid-template-columns: 20% 60% 12% 8%;
-  background-image: linear-gradient(to bottom,#65738D, #001843);
+  background-image: linear-gradient(to bottom,#001843,#9eadc7, #001843);
 }
 .have-idea-title{
   grid-column: 2;
@@ -1383,31 +1390,49 @@ ul {
   opacity: .6;
   line-height: 4.8rem;
   font-size: 5rem;
-  margin: 9rem 0 0 -3rem;
+  margin: 2rem 0 0 -3rem;
+  white-space: nowrap;
+}
+.visual-way {
+  margin: -4rem 0 0 14rem;
 }
  .bulb-svg {
   grid-column: 2;
   grid-row: 2;
   z-index: 4;
-  margin-top: 14rem;
+  margin-top: 4rem;
+  margin-left: -9rem;
 }
 .question-mark-invisible {
   opacity: 0;
 }
 .question-mark {
-  font-size: 39rem;
+  font-size: 35rem;
   color: white;
   grid-row: 2;
   grid-column: 3;
   z-index: 1;
   opacity: .2;
-  margin: -4rem 0 0 0;
-  animation: 4s after-bulb 1 forwards;
+  margin: 10rem 0 0 -5rem;
+  animation: 3.8s after-bulb 1 forwards
 }
-/* Lightbulb strokes and fills */
-.bulb-lines{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-linejoin:round;}
-.bulb-glow{fill:url(#halo_1_);}
-.dot-fill{fill:#FFFFFF;}
+
+
+
+/* Lightbulb SVG strokes and fills */
+
+.bulb-lines {
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-width:7;
+  stroke-linejoin:round;
+}
+.bulb-glow {
+  fill:url(#halo_1_);
+}
+.dot-fill {
+  fill:#FFFFFF;
+}
 
 /* Animation */
 #cord {
