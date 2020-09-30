@@ -59,7 +59,13 @@ img {
 
 
 /* Homepage Right Arrow Positioning */
-.fp-viewing-Homepage-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio1-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio2-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio3-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio4-0 .fp-controlArrow.fp-next, .fp-viewing-Portfolio5-0 .fp-controlArrow.fp-next {
+.fp-viewing-Homepage-0 .fp-controlArrow.fp-next,
+.fp-viewing-Portfolio1-0 .fp-controlArrow.fp-next,
+.fp-viewing-Portfolio2-0 .fp-controlArrow.fp-next,
+.fp-viewing-Portfolio3-0 .fp-controlArrow.fp-next,
+.fp-viewing-Portfolio4-0 .fp-controlArrow.fp-next,
+.fp-viewing-Portfolio5-0 .fp-controlArrow.fp-next,
+.fp-viewing-Contact-0 .fp-controlArrow.fp-next {
   right:8%;
   border-width: 5rem;
   border-color: transparent;
@@ -97,7 +103,9 @@ body.fp-viewing-Portfolio4-3 #fp-nav,
 body.fp-viewing-Portfolio5-1 #fp-nav,
 body.fp-viewing-Portfolio5-2 #fp-nav,
 body.fp-viewing-Portfolio5-3 #fp-nav,
-body.fp-viewing-Homepage-0 #fp-nav{
+body.fp-viewing-Homepage-0 #fp-nav,
+body.fp-viewing-Contact-1 #fp-nav
+{
   display:none;
 }
 /* SVG classes */
@@ -135,11 +143,11 @@ body.fp-viewing-Homepage-0 #fp-nav{
   stroke-width: 4px;
   }
 
-  .NWD-cls-1 {
-    fill: none;
-    stroke: #E3D9BB;
-    stroke-width: 4px;
-  }
+.NWD-cls-1 {
+  fill: none;
+  stroke: #E3D9BB;
+  stroke-width: 4px;
+}
 
 .NUM-cls-1 {
   fill: none;
@@ -170,7 +178,7 @@ ul {
 }
 
 
-/* Cover Page General Classes */
+/* Portfolio Pages General Classes */
 .section {
   background-size: cover;
 }
@@ -260,7 +268,6 @@ ul {
   opacity: .6;
 }
 
-
 /* Slide page general classes */
 
 .slide-layout {
@@ -301,7 +308,7 @@ ul {
   z-index: 6;
   transform: rotate(180deg);
 }
-.return-home{
+.return-home {
   transform: rotate(180deg);
 }
 
@@ -321,7 +328,7 @@ ul {
   padding-left: 3rem;
 }
 
-.slide-detail-text-box{
+.slide-detail-text-box {
   grid-column: 3;
   grid-row: 1;
   z-index: 4;  
@@ -346,7 +353,7 @@ ul {
   transition-timing-function: ease-in-out;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
-.slide-side-title{
+.slide-side-title {
   grid-column: 3;
   grid-row: 1;
   z-index: 4;
@@ -372,7 +379,7 @@ ul {
 
 /* Monitor format image */
 
-.slide-items-monitor{
+.slide-items-monitor {
   width: 76%;
   padding: 0rem 5rem 4rem 6rem;
   align-self: flex-start;
@@ -404,7 +411,7 @@ ul {
   background-size: cover;
 }
 
-.about-color-block{
+.about-color-block {
   grid-row: 1/ 6;
 }
 
@@ -419,7 +426,7 @@ ul {
   white-space: nowrap;
 }
 
-.about-right-nav{
+.about-right-nav {
   grid-column-start: 4;
   grid-row-start: 3;
   width: 0;
@@ -431,7 +438,7 @@ ul {
   margin-left: 1.4rem;
   margin-bottom: 16rem;
 }
-.fp-viewing-Homepage-0 .fp-controlArrow.fp-next{
+.fp-viewing-Homepage-0 .fp-controlArrow.fp-next {
   right: 0%;
 }
 
@@ -446,20 +453,20 @@ ul {
   width: 120%;
 }
 
-.home-second-line{
+.home-second-line {
   grid-row: 2;
   opacity: .85;
   margin: 0 0 0 2rem;
 }
 
- .vert-stripe{
+ .vert-stripe {
   opacity: .85;
   z-index: 1;
   height: 3rem;
   margin-top: 3.6rem;
 }
 
-.home-pg-title{
+.home-pg-title {
   color: #001843;
   opacity: .85;
   font-weight: 400;
@@ -468,23 +475,23 @@ ul {
   white-space: nowrap;
 }
 
-.home-page-gallery{
+.home-page-gallery {
   grid-row: 3;
   grid-column: 1/ 4;
   display: flex;
 }
 
-.portfolio-nav-btn{
+.portfolio-nav-btn {
   grid-row: 5;
   width: 80%;
 }
-.horizontal-btn{
+.horizontal-btn {
   width: 76%;
 }
-.vertical-btn{
+.vertical-btn {
   opacity:0;
 }
-.overlay-title{
+.overlay-title {
   grid-row: 3;
   justify-self: center;
   align-self: center;
@@ -496,38 +503,34 @@ ul {
   text-align: center;
 }
 
-.tech-gallery-box{
+.tech-gallery-box {
   grid-row: 3;
   grid-column: 1;
   position: relative;
 }
-.tech{
+.tech {
   grid-column: 1;
 }
-.nonprofit-gallery-box{
+.nonprofit-gallery-box {
  grid-row: 3;
  grid-column: 2;
  position: relative;
 }
-.nonprofit{
+.nonprofit {
   grid-column: 2;
 }
-.retail-gallery-box{
+.retail-gallery-box {
   grid-row: 3;
   grid-column: 3;
   position: relative;
 }
-.retail{
+.retail {
   grid-column: 3;
 }
 
-
-
-
-
 /* #Homepage/1 Offering and Tools Slide */
 
-.about-slide-one{
+.about-slide-one {
   height: 100vh;
   display: grid;
   grid-template-columns: 10% 80% 10%;
@@ -535,21 +538,21 @@ ul {
   background: linear-gradient(64deg, rgba(51, 70, 105, 1) 0%, rgba(59, 78, 111, 1) 12.49%, rgba(83, 99, 128, 1) 32.36%, rgba(120, 133, 156, 1) 57.13%, rgba(172, 180, 194, 1) 85.57%, rgba(201, 206, 215, 1) 100%);;
 }
 
-.about-slide-content-wrapper{
+.about-slide-content-wrapper {
   grid-column: 2;
   grid-row: 2/ span3;
   display: flex;
   height: fit-content;
 }
 
-.offerbox-wrapper{
+.offerbox-wrapper {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 8% 25% 34% 33%;
   padding-right: 4rem;
 }
 
-.offerbox-title{
+.offerbox-title {
   grid-column: 1/ span2;
   font-weight : bold;
   font-size : 2rem;
@@ -559,15 +562,15 @@ ul {
   z-index: 4;
 }
 
-.tools{
+.tools {
   margin-top: 0.1rem;
 }
-.offerbox-title-block{
+.offerbox-title-block {
   background-color: #FDCD81;
   grid-column: 1/ span2;
   grid-row: 1;
 }
-.offer-list-title{
+.offer-list-title {
   white-space: nowrap;
   grid-row: 1/ 2;
   grid-column: 2;
@@ -576,7 +579,7 @@ ul {
   padding-right: 5rem;
 }
 
-.offerbox-label{
+.offerbox-label {
   transform: rotate(-90deg) ;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -588,75 +591,77 @@ ul {
   z-index: 4;
   margin: -0.8rem;
 }
-.digital{
+.digital {
   grid-row: 2;
 }
-.print{
+.print {
   grid-row: 3;
 }
 
-.mograph{
+.mograph {
   grid-row: 4;
   text-align: right;
 }
 
-.offer-label-overlay{
+.offer-label-overlay {
   background-color: white;
   opacity: .5;
   grid-column: 1/ 2;
   grid-row: 1/ 5;
   z-index: 2;
 }
-.offerbox-digital-block{
+
+.offerbox-digital-block {
   background-color: #FCC062;
   grid-row: 2;
   grid-column: 1/ span2;
 }
-.offer{
+
+.offer {
   text-transform: uppercase;
   font-weight: 500;
   color: #334669;
   font-size: 1.5rem;
 }
 
-.offers-digital{
+.offers-digital {
   grid-row: 2;
   grid-column: 2;
   z-index: 10;
 }
 
-.offerbox-print-block{
+.offerbox-print-block {
   background-color: #F8A457;
   grid-row: 3;
   grid-column: 1/ span2;
 }
 
-.offers-print{
+.offers-print {
   grid-row: 3;
   grid-column: 2;
   z-index: 10;
 }
 
-.offerbox-mograph-block{
+.offerbox-mograph-block {
   background-color: #F3884C;
   grid-row: 4;
   grid-column: 1/ span2;
 }
 
-.offers-mograph{
+.offers-mograph {
   grid-row: 4;
   grid-column: 2;
   z-index: 10;
   margin-top: 2rem;
 }
 
-.logo-grid-box{
+.logo-grid-box {
   background-color: rgba(255, 255, 255, .3);
   display: flex;
   flex-direction: column;
  }
 
-.logo-grid{
+.logo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -664,12 +669,13 @@ ul {
   margin: 0 3rem 2rem 3rem;
 }
 
-.logos{
+.logos {
    object-fit: contain;
    height: 7rem;
 }
 
-.slide-two{
+/* #Homepage/2 About Me Page-Training */
+.slide-two {
   height: 100vh;
   display: grid;
   grid-template-columns: 10% 80% 10%;
@@ -678,52 +684,66 @@ ul {
   background-size: cover;
 }
 
-.training-page-grid{
+.training-page-grid {
   display: grid;
   height: 100vh;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: repeat(4, 25%) ;
 }
-.training-page-arrow{
+.training-page-arrow {
   grid-row: 2/ 4;
   align-self: center;
 }
-.training-title{
+.training-title {
   grid-row: 1;
   grid-column: 2/ 4;
   z-index: 20;
+  opacity: .8;
+  margin: 0px 0 0 -7rem;
+  font-size: 2rem;
 }
-.training-overlay{
+.training-overlay {
   justify-self: center;
   align-self: center;
   z-index: 6;
-  color: rgb(237, 234, 223);
+  color: #FFFFFF;
   opacity: 0.8;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
-  text-align: center;
+  margin: 9rem;
 }
-.training-bar{
+.training-bar {
   grid-column: 1/ 4;
   display: flex;
 }
-.bar-one{
+.bar-one {
   grid-row: 1;
   background-color:#469183;
 }
-.bar-two{
+.bar-two {
   grid-row: 2;
-  background-color: #6EA2B2;
+  background-image: url(./images/Abstract\ particles_Slice.png);
+  background-size: cover;
 }
-.bar-three{
+.bar-three {
   grid-row: 3;
-  background-color: #334669;
+  background-image: url(./images/Coding\ Sample.png);
+  background-size: cover;
+  background-color: rgb(0, 0, 0,.4);
+  background-blend-mode: overlay;
 }
-.bar-four{
+
+.bar-four {
   grid-row: 4;
-  background-color: #001843;
+  background-image: url(./images/Anomaly\ Balls_Placeholder.jpg);
+  background-size: cover;
 }
-.global-photo{
+.animation {
+  z-index: 2;
+}
+
+/* #Homepage/4 GLobal Perspectove Slide */
+.global-photo {
   grid-row: 2 / 5;
   grid-column: 1 / 4;
   display: flex;
@@ -732,7 +752,7 @@ ul {
   filter: drop-shadow(5px 7px 4px #001742);
 }
 
-.global-text-wrapper{
+.global-text-wrapper {
   grid-row: 1 / 3;
   grid-column: 2 / 4;
   display: flex;
@@ -742,20 +762,20 @@ ul {
   margin-left: 10rem;
 }
 
-.global-text h1{
+.global-text h1 {
   font-size: 5rem;
   color: #D89E44;
   text-align: right;
 }
 
-.global-text p{
+.global-text p {
   font-size: 2.8rem;
   text-align: right;
   line-height: 1em;
   color: white;
 }
 
-.slide-three{
+.slide-three {
   background-color: #001843;
   height: 100vh;
   display: grid;
@@ -763,7 +783,7 @@ ul {
   grid-template-rows: 15% 70% 15%; 
 }
 
-.about-jewelry-graphic{
+.about-jewelry-graphic {
   grid-row: 1 / 4;
   grid-column: 1 / 5;
   z-index: 4;
@@ -772,7 +792,7 @@ ul {
   align-items: flex-end;
 }
 
-.jewelry-card-container{
+.jewelry-card-container {
   grid-row: 1 / 3;
   grid-column: 3 / 4;
   display: flex;
@@ -790,7 +810,7 @@ ul {
   align-self: center;
 }
 
- .jewelry-card-ring{
+ .jewelry-card-ring {
   align-self: flex-end;
   width: 39%;
   z-index: 10;
@@ -802,7 +822,7 @@ ul {
   margin-right: -7rem;
   margin-left: 11rem;
  }
- .about-jewelry-title-wrap{
+ .about-jewelry-title-wrap {
    grid-row: 1;
    grid-column: 1 / 3;
    z-index: 8;
@@ -819,15 +839,15 @@ ul {
   opacity: .8;
  }
 
- .second-indent{
+ .second-indent {
    margin-left:8rem;
  }
 
- .third-indent{
+ .third-indent {
    margin-left: 12rem;
  }
 
- .jewelry-card-text{
+ .jewelry-card-text {
   align-self: flex-end;
   justify-self: left;
   color: white;
@@ -836,7 +856,7 @@ ul {
   margin-right: -17rem;
  }
 
- .slide-four{
+ .slide-four {
    height: 100vh;
    display: grid;
    grid-template-columns: 10% 80% 10%;
@@ -845,7 +865,7 @@ ul {
    background-color: #E95232;
  }
 
- .nepal-cutaway{
+ .nepal-cutaway {
   grid-row: 3;
   grid-column: 1 /4;
   z-index: 4;
@@ -853,14 +873,14 @@ ul {
  }
 
 
- .gradient-cutaway{
+ .gradient-cutaway {
   grid-column: 1 /5;
   grid-row: 1 /5;
   clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
   background-image: linear-gradient(to bottom,#65738D, #001843);
  }
 
- .SS-logo-large{
+ .SS-logo-large {
   grid-row: 2 /3;
   grid-column: 3;
   margin-left: -14rem;
@@ -868,7 +888,7 @@ ul {
   width: 140%;
  }
 
- .about-SS{
+ .about-SS {
   z-index: 12;
   grid-row: 1;
   grid-column: 1 / 4;
@@ -876,20 +896,21 @@ ul {
   justify-content: space-between;
   margin: 2rem 2rem -5rem 2rem;
  }
- .about-SS-text{
+
+ .about-SS-text {
   color: white;
   text-align: right;
   font-weight: 400;
   font-size: 2rem;
  }
 
- .about-SS-bold{
+ .about-SS-bold {
   color: white;
   font-weight: 400;
   font-size: 2.8rem;
  }
 
- .rainas-photo-credit{
+ .rainas-photo-credit {
   transform: rotate(-90deg); */
     grid-column: 1;
     z-index: 10;
@@ -906,7 +927,102 @@ ul {
   height: 100vh;
 }
 
-/* Listen Closely Specific Slide Classes */
+/* #Portfolio1 Huntre Equine Pages */
+
+.cover-pg-he {
+  background-image: linear-gradient(to bottom, #6EA2B2, #24273E );
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 60% 12% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+
+.he-cover-title {
+  color: #FAEFea;
+  grid-column-start: 4;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+  justify-self: center;
+  padding: 0 .4em 0 0;
+}
+
+.he-cover-slide {
+  width:80%;
+  grid-column-start: 2;
+  grid-row: 2;
+  z-index: 2;
+  justify-self: left;
+  align-self: end;
+} 
+
+.he-info-slide {
+  width: 80%; 
+  grid-column-end: 3;
+  grid-row-end:3;
+  justify-self: right;
+  align-self: start;
+  z-index: 1;
+} 
+
+.view-he {
+  color: #fcc062;
+}
+
+.vert-he-title-white {
+  color: #FAEFea;
+}
+
+/* #Portfolio2 Listen Closely Pages */
+
+.cover-pg-lc {
+  background-image: linear-gradient(to bottom, #3E0C27, #7E5C6E );
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 50% 22% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.lc-cover-title {
+  color: #3E0C27;
+  grid-column-start: 4;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+  justify-self: center;
+  padding: 0 5.2em 0 0;
+}
+
+.lc-desktop {
+  width:95%;
+  grid-column-start: 2;
+  grid-row: 2;
+  z-index: 1;
+} 
+
+.lc-mobile {
+  width: 35%; 
+  grid-column-end: 3;
+  grid-row-end:3;
+  justify-self: end;
+  align-self: end;
+   z-index: 2;
+} 
+
+.view-lc {
+  color: #FAEFea;
+}
 .LC-slide-title-wrapper{
   grid-row: 1 ;
   grid-column: 2 / 3;
@@ -960,7 +1076,9 @@ ul {
   width: 73%;
   margin-top: 4rem;
 }
-
+.experts-mobile-position {
+  margin: 8rem 0 0 -20rem;
+}
 
 .LC-testimonial{
   font-size: 2rem;
@@ -977,12 +1095,48 @@ ul {
   margin: 0 0 0 4rem;
 }
 
-
 .LC-button:hover{
   background-color: #fdfaf1;
   color: #6c455a;
 }
- /* Sangsangai Specific Slide Classes */
+ /* #Portfolio3 Sangsangai Pages */
+
+
+ .cover-pg-ss {
+  background-color: #469183;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 18% 58% 16% 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+ .ss-mobile {
+  width: 85%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  z-index: 2
+} 
+
+.ss-cover-title {
+  color: #FDF8E4;
+  grid-column-start: 4;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  white-space: nowrap;
+  display: flex;
+  margin: 0;
+
+  padding: 0 1em 0 0;
+}
+
+ .view-ss {
+  color: #FDF8E4;
+}
+ /* #Portfolio3 Sangsangai Slide Classes */
 
  .SS-slide-title-wrapper{
   grid-row: 1 ;
@@ -1034,16 +1188,13 @@ ul {
   z-index: 100;
   box-shadow: 6px 6px 11px rgb(35, 31, 32, 0.75);
 }
-.SS-slide-3-item-wrapper{
-    grid-column: 2/ 3;
-    grid-row: 2 / 5;
-    display: flex;
-    align-items: center;
-    z-index: 8;
-    margin: 3rem -5rem 11rem 2rem;
-
-    transition-timing-function: ease-in-out;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+.SS-slide-3-item-wrapper {
+  grid-column: 2/ 3;
+  grid-row: 2 / 5;
+  display: flex;
+  align-items: center;
+  z-index: 8;
+  margin: 3rem -5rem 11rem 2rem;
 }
 
 .SS-full-graphic-overlay {
@@ -1054,17 +1205,17 @@ ul {
   opacity: 78%
 }
 
-.SS-landing-card-wrap{
+.SS-landing-card-wrap {
   display: flex;
   width: 111%;
   flex-flow: column;
 }
 
-.SS-landing-card-wrap-mobile{
+.SS-landing-card-wrap-mobile {
   display:flex;
 }
 
-.SS-info-overlay{
+.SS-info-overlay {
   z-index: 10;
 }
 
@@ -1073,7 +1224,8 @@ ul {
   color: #FDF8EF;
   border-color: #FDF8EF;
 }
-.SS-button:hover{
+
+.SS-button:hover {
   background-color: #FDF8EF;
   color: #d24f1b;
   border-color: black;
@@ -1083,9 +1235,11 @@ ul {
 .NUM-slide-title {
   margin-right: 2rem;
 }
-.num-slide-size{
+
+.num-slide-size {
   width: 82%;
 }
+
 .cyber-title {
   font-size: 4rem;
   text-align: right;
@@ -1102,13 +1256,12 @@ ul {
   margin-right: 10rem;
 }
 
-
 .num-graphic-overlay {
   z-index: 4;
   padding: 2rem 0rem 2rem 2rem;
    width: 67%;
 }
-.num-part-graphic-overlay{
+.num-part-graphic-overlay {
   grid-column: 3;
   grid-row: 1 /5;
   z-index: 4;
@@ -1150,152 +1303,6 @@ ul {
   font-weight: 500;
 }
 
-
-
-
-
-
-
-
-/* Huntre Equine Cover Page */
-
-.cover-pg-he {
-  background-image: linear-gradient(to bottom, #6EA2B2, #24273E );
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 20% 60% 12% 8%;
-  grid-template-rows: 10% 80% 10%;
-}
-
-
-.he-cover-title {
-  color: #FAEFea;
-  grid-column-start: 4;
-  grid-row: 2 / span 2;
-  align-self: center;
-  justify-self: center;
-  z-index: 2;
-  white-space: nowrap;
-  display: flex;
-  margin: 0;
-  justify-self: center;
-  padding: 0 .4em 0 0;
-}
-
-.he-cover-slide {
-  width:80%;
-  grid-column-start: 2;
-  grid-row: 2;
-  z-index: 2;
-  justify-self: left;
-  align-self: end;
-} 
-
-.he-info-slide {
-  width: 80%; 
-  grid-column-end: 3;
-  grid-row-end:3;
-  justify-self: right;
-  align-self: start;
-  z-index: 1;
-} 
-
-.view-he {
-  color: #fcc062;
-}
-
-.vert-he-title-white {
-  color: #FAEFea;
-}
-
-/* Listen Closely Cover Page */
-
-.cover-pg-lc {
-  background-image: linear-gradient(to bottom, #3E0C27, #7E5C6E );
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 20% 50% 22% 8%;
-  grid-template-rows: 10% 80% 10%;
-}
-
-.lc-cover-title {
-  color: #3E0C27;
-  grid-column-start: 4;
-  grid-row: 1 / span 2;
-  align-self: center;
-  justify-self: center;
-  z-index: 2;
-  white-space: nowrap;
-  display: flex;
-  margin: 0;
-  justify-self: center;
-  padding: 0 5.2em 0 0;
-}
-
-.lc-desktop {
-  width:95%;
-  grid-column-start: 2;
-  grid-row: 2;
-  z-index: 1;
-} 
-
-.lc-mobile {
-  width: 35%; 
-  grid-column-end: 3;
-  grid-row-end:3;
-  justify-self: end;
-  align-self: end;
-   z-index: 2;
-} 
-
-.view-lc {
-  color: #FAEFea;
-}
-
-
-
- /* Sangsangai Cover Page */
-
- 
-.cover-pg-ss {
-  background-color: #469183;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 18% 58% 16% 8%;
-  grid-template-rows: 10% 80% 10%;
-}
-
-
-
- .ss-mobile {
-  width: 85%;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  align-self: center;
-  z-index: 2
-} 
-
-.ss-cover-title {
-  color: #FDF8E4;
-  grid-column-start: 4;
-  grid-row: 2 / span 2;
-  align-self: center;
-  justify-self: center;
-  z-index: 2;
-  white-space: nowrap;
-  display: flex;
-  margin: 0;
-
-  padding: 0 1em 0 0;
-}
-
- .view-ss {
-  color: #FDF8E4;
-}
-
 /* #Portfolio4 Natasha Wozniak Jewelry Cover Slide */
 
 .cover-pg-nwd {
@@ -1329,15 +1336,15 @@ ul {
   padding: 0 2.2em 0 0;
 }
 
- .view-nwd {
+.view-nwd {
   color: #E3D9BB;
 }
-.nwd-logo{
+.nwd-logo {
   width: 50%;
   height: 50%;
   margin: 2rem;
 }
-.nwd-slide-title-box{
+.nwd-slide-title-box {
   grid-row: 1;
   grid-column: 2 / 3;
   display: flex;
@@ -1346,7 +1353,6 @@ ul {
   z-index: 6;
   
 }
-
 
 /* Numerati Cover Page */
 
@@ -1373,48 +1379,47 @@ ul {
   z-index: 2;
   margin-left: -5rem;
 }
-
-
-/* Contact Section */
-
+ 
+/* #Contact Section */
 
 .have-idea-page {
   display: grid;
-  grid-template-rows: 8% 72% 20%;
+  grid-template-rows: 8% 20% 20% 52%;
   grid-template-columns: 20% 60% 12% 8%;
-  background-image: linear-gradient(to bottom,#001843,#9eadc7, #001843);
+  background-image: linear-gradient(to bottom,#001843 3%,#9eadc7 24%, #001843 70%);
 }
-.have-idea-title{
-  grid-column: 2;
+.have-idea-title {
+  grid-column: 1;
   color: white;
   opacity: .6;
   line-height: 4.8rem;
   font-size: 5rem;
-  margin: 2rem 0 0 -3rem;
+  margin: 4rem 0 0 4rem;
   white-space: nowrap;
 }
 .visual-way {
-  margin: -4rem 0 0 14rem;
+  margin: 20rem 18rem;
 }
  .bulb-svg {
   grid-column: 2;
   grid-row: 2;
   z-index: 4;
-  margin-top: 4rem;
-  margin-left: -9rem;
+  margin-top: -4rem;
+  margin-left: -5rem;
+  padding-left: 8rem;
 }
 .question-mark-invisible {
   opacity: 0;
 }
 .question-mark {
-  font-size: 35rem;
+  font-size: 25rem;
   color: white;
   grid-row: 2;
   grid-column: 3;
   z-index: 1;
   opacity: .2;
-  margin: 10rem 0 0 -5rem;
-  animation: 3.8s after-bulb 1 forwards
+  margin: 8rem 0 0 -17rem;
+  animation: 3.8s after-bulb 1 forwards;
 }
 
 
@@ -1434,7 +1439,8 @@ ul {
   fill:#FFFFFF;
 }
 
-/* Animation */
+/* Lightbulb Animation */
+
 #cord {
   stroke-dasharray: 4500px;  
 }
@@ -1514,7 +1520,7 @@ ul {
     stroke-dashoffset: 0;
   }
 } 
-@keyframes dot-appear{
+@keyframes dot-appear {
   from {
     opacity: 0;
   }
@@ -1523,7 +1529,7 @@ ul {
   }
 }
 
-@keyframes after-bulb{
+@keyframes after-bulb {
   0% {
     opacity:0;
   }
